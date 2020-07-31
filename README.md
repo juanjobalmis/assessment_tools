@@ -1,6 +1,6 @@
 # Assessment Tools
 
-* You have to install the **.NET Framework 4.6** runtime.
+* You have to install the **.NET Core 3.1** runtime.
 * Tool to be used not only with **Moodle** but also with other similar assessment methods.
 
 * **How to use the program?**

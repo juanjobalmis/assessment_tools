@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <AssemblyName>at</AssemblyName>
+    <AssemblyName>assesst</AssemblyName>
     <RootNamespace>AssessmentTools</RootNamespace>
   </PropertyGroup>
 
