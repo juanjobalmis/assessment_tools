@@ -24,6 +24,19 @@ namespace AssessmentTools
             FileName = path;
         }
 
+        private static string[] JoinOrphanStrings(string[] input, string separator)
+        {
+            List<string> output = new List<string>();
+            for (int i = 0; i < input.Length; i++)
+            {
+                string data = input[i];
+                if (output.Count > 0 && data.Length > 0 && data[0] != '"' && data[^1] == '"')
+                    output[^1] = $"{output[^1]}{separator}{data}";
+                else
+                    output.Add(data);
+            }
+            return output.ToArray();
+        }
         public List<string> ReadRow()
         {            
             if (EndOfStream)
@@ -31,7 +44,8 @@ namespace AssessmentTools
 
             string text = this.ReadLine();
             List<string> row = new List<string>();
-            foreach (var value in text.Split(new char[] { ';' }, StringSplitOptions.None))
+            string[] fields = text.Split(new char[] { ';', ',' }, StringSplitOptions.None);
+            foreach (var value in JoinOrphanStrings(fields, ", "))
                 row.Add(value.Replace("\"", ""));
 
             return row;
