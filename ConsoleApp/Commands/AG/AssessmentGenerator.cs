@@ -55,7 +55,7 @@ namespace AssessmentTools.Commands
                     AssessmentGeneratorToBook.GenerateSummary(options.AssignmentName, rubricFiles, studentsData, options.Verbose);
                     break;
                 default:
-                    throw new Exception($"The target platform '{options.AssessmentPlatform.TargetPlatForm}' is not still available.");
+                    throw new ArgumentException($"The target platform '{options.AssessmentPlatform.TargetPlatForm}' is not still available.");
             }
         }
     }

@@ -61,7 +61,7 @@ namespace AssessmentTools.Data
             }
             catch (Exception e)
             {
-                throw new Exception($"Error reading {studentNamesFile}", e);
+                throw new CsvFileReader.CsvFileReaderException($"Error reading {studentNamesFile}", e);
             }
             finally
             {

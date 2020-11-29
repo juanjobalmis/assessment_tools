@@ -7,6 +7,13 @@ namespace AssessmentTools.Data
 {
     public class GroupAssessmentData : IEnumerable<EntityDataAssessed>
     {
+        public class NormalizedAssessmentCriteriaException : Exception
+        {
+            public NormalizedAssessmentCriteriaException(string message) : base(message)
+            {
+            }
+        }
+
         public string AssignmentName { get; private set; }
         private List<AssessableCriterion> AssessableCriteriaOfThisGroup { get; set; }
 
@@ -22,9 +29,9 @@ namespace AssessmentTools.Data
         private void NomalizeToGroupCriteria(EntityDataAssessed data)
         {
             if (AssessableCriteriaOfThisGroup.Count == 0)
-                throw new Exception("Assessment criteria must exist before normalize them.");
+                throw new NormalizedAssessmentCriteriaException("Assessment criteria must exist before normalize them.");
 
-            if (data.Criteria.Count == 0)
+            if (!data.Criteria.Any())
             {
                 AssessableCriteriaOfThisGroup.ForEach(ac => data.Add(new AssessableCriterionRegistry(ac.Name, ac.WeightPercentage, 0)));
             }
@@ -36,7 +43,7 @@ namespace AssessmentTools.Data
                                         $"\n\tgroup summary for the assignment called {AssignmentName}." +
                                         $"\n\tThis assignment contains the following assessable criteria:\n\t\t{string.Join("\n\t\t", AssessableCriteriaOfThisGroup)}" +
                                         $"\n\tPlease, check the criteria in {data.Entity.Name}'s rubric.\n";
-                    throw new Exception(message);
+                    throw new NormalizedAssessmentCriteriaException(message);
                 }
             }
         }
@@ -52,7 +59,7 @@ namespace AssessmentTools.Data
         {
             if (AssessableCriteriaOfThisGroup.Count == 0)
                 throw new ArgumentException("Before to add the student assessment, all the assessment criteria have to be added.");
-            NomalizeToGroupCriteria(data);
+            // NomalizeToGroupCriteria(data);
             Data.Add(data ?? throw new ArgumentNullException(nameof(data)));
         }
 

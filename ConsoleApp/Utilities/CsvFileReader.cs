@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AssessmentTools
 {
-    class CsvFileReader : StreamReader
+    public class CsvFileReader : StreamReader
     {
         private string FileName { get; set;}
 
@@ -13,7 +13,6 @@ namespace AssessmentTools
         {
             public CsvFileReaderException(string message) : base(message)
             {
-                ;
             }
             public CsvFileReaderException(string message, Exception innerException) : base(message, innerException)
             {
@@ -45,7 +44,7 @@ namespace AssessmentTools
             string text = this.ReadLine();
             List<string> row = new List<string>();
             string[] fields = text.Split(new char[] { ';', ',' }, StringSplitOptions.None);
-            foreach (var value in JoinOrphanStrings(fields, ", "))
+            foreach (var value in JoinOrphanStrings(fields, ","))
                 row.Add(value.Replace("\"", ""));
 
             return row;

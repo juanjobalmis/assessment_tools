@@ -8,7 +8,7 @@ namespace AssessmentTools.Commands
     class AssessmentGeneratorOptions : CommandOptions
     {
         [Flags]
-        private enum ForcedOption { studentNamesFile = 0x0001, targetPlatform = 0x0002 }
+        private enum ForcedOption : ushort { studentNamesFile = 0x0001, targetPlatform = 0x0002 }
         protected override List<string> ForcedOptionsNotIntroduced => ForcedOptionsNotInMask(typeof(ForcedOption));
 
         public const string COMMAND = "AG";

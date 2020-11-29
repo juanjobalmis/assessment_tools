@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AssessmentTools.Data
 {
@@ -37,11 +33,27 @@ namespace AssessmentTools.Data
         }
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return Name.GetHashCode();
         }
         public static bool operator==(AssessableCriterion o1, AssessableCriterion o2)
         {
             return o1.Equals(o2);
+        }
+        public static bool operator<(AssessableCriterion o1, AssessableCriterion o2)
+        {
+            return o1.CompareTo(o2) < 0;
+        }
+        public static bool operator <=(AssessableCriterion o1, AssessableCriterion o2)
+        {
+            return o1.CompareTo(o2) < 0 || o1 == o2;
+        }
+        public static bool operator>(AssessableCriterion o1, AssessableCriterion o2)
+        {
+            return o1.CompareTo(o2) > 0;
+        }
+        public static bool operator >=(AssessableCriterion o1, AssessableCriterion o2)
+        {
+            return o1.CompareTo(o2) > 0 || o1 == o2;
         }
         public static bool operator!=(AssessableCriterion o1, AssessableCriterion o2)
         {

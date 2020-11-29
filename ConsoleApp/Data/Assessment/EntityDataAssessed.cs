@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 
 namespace AssessmentTools.Data
 {
@@ -11,9 +12,9 @@ namespace AssessmentTools.Data
         public IEntityInfoToAssess Entity { get; private set; }
         public int CriteriaCount { get => AssessmentCriteria.Count; }
         public double Grade { get => AssessmentCriteria.Values.Select(ac => ac.GradeRelativeToWeight).Sum(); }
-        public List<AssessableCriterion> Criteria 
+        public IEnumerable<AssessableCriterion> Criteria 
         {
-            get { return AssessmentCriteria.Values.Select(acr => acr.Criterion).ToList(); }
+            get { return AssessmentCriteria.Values.Select(acr => acr.Criterion); }
         }
 
         public AssessableCriterionRegistry this[string criteria]
@@ -44,10 +45,10 @@ namespace AssessmentTools.Data
 
         public override string ToString()
         {
-            string text = $"Assess data for {Entity.Name}\n";
+            StringBuilder text = new StringBuilder($"Assess data for {Entity.Name}\n");
             foreach (var ac in AssessmentCriteria)
-                text += $"\t{ac}\n";
-            return text;
+                text.Append($"\t{ac}\n");
+            return text.ToString();
         }
 
         public IEnumerator<AssessableCriterionRegistry> GetEnumerator()

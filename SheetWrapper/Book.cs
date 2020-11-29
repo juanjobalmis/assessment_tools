@@ -10,7 +10,7 @@ namespace SheetWrapper
 
         public Sheet MainSheet
         {
-            get { return new Sheet(book.Workbook.Worksheets[1]); }
+            get { return new Sheet(book.Workbook.Worksheets[0]); }
         }
         public string FileName
         {

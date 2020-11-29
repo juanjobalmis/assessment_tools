@@ -3,7 +3,7 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using OfficeOpenXml;
-
+using OfficeOpenXml.Style.XmlAccess;
 
 namespace SheetWrapper
 {
@@ -27,17 +27,17 @@ namespace SheetWrapper
         {
             CellAddress a = Address;
             int i = verticalLoad ? a.Row : a.Col;
-            foreach (var d in data)
-            {
-                var c = verticalLoad ? cells.Worksheet.Cells[i++, a.Col] : cells.Worksheet.Cells[a.Row, i++];
-                c.Value = d;
 
-                if (namedStyle != null)
+            if (namedStyle != null) // ????
+            {
+                IEnumerable<ExcelNamedStyleXml> namedStyles = cells.Worksheet.Workbook.Styles.NamedStyles.Where(s => s.Name == namedStyle);
+                if (!namedStyles.Any())
+                    throw new ArgumentException($"Named style {namedStyle} is not defined.");
+                foreach (var d in data)
                 {
-                    var namedStyles = cells.Worksheet.Workbook.Styles.NamedStyles.Where(s => s.Name == namedStyle);
-                    if (namedStyles.Any())
-                        throw new ArgumentException($"Named style {namedStyle} is not defined.");
-                    c.StyleName = namedStyles.First().Name;
+                    var c = verticalLoad ? cells.Worksheet.Cells[i++, a.Col] : cells.Worksheet.Cells[a.Row, i++];
+                    c.Value = d;
+                    c.StyleName = namedStyle;
                     c.AutoFitColumns();
                 }
             }
