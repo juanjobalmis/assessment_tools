@@ -40,10 +40,11 @@ namespace AssessmentTools.Commands.AG
                 {
                     if (e.Grade > 0d)
                     {
+                        EntityDataAssessed firstStudentAssessed = data.First(e => e.Criteria.Any());
                         Book b = AssessGeneratorCommon.CreateBookWithoutData(
                                 $"{e.Entity.Name}", data.AssignmentName,
-                                data.First().Criteria.Select(c => c.Name).ToList(),
-                                data.First().Select(c => $"{c.Criterion.WeightPercentage}%").ToList(),
+                                firstStudentAssessed.Criteria.Select(c => c.Name).ToList(),
+                                firstStudentAssessed.Select(c => $"{c.Criterion.WeightPercentage}%").ToList(),
                                 startDataRow, startDataCol);
                         AssessGeneratorCommon.AddEntityData(b.MainSheet, e, startDataRow, startDataCol);
                         books.Add(b);

@@ -2,8 +2,8 @@
   "profiles": {
     "ConsoleApp": {
       "commandName": "Project",
-      "commandLineArgs": "ag -v -s B:\\drive\\alumnos\\2bac.csv -t xlsx",
-      "workingDirectory": "B:\\Drive\\Balmis 2020-2021\\Correcciones\\2BAC\\Bootstrap"
+      "commandLineArgs": "ag -v -s B:\\drive\\alumnos\\1dam.csv -t xlsx",
+      "workingDirectory": "B:\\Drive\\Balmis 2020-2021\\Correcciones\\1DAM\\Examenes\\Enero2021"
     }
   }
 }

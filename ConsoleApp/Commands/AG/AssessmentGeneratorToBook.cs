@@ -18,11 +18,13 @@ namespace AssessmentTools.Commands.AG
                 int startDataRow = 3;
                 int startDataCol = 3;
 
+                EntityDataAssessed firstStudentAssessed = data.First(e => e.Criteria.Any());
+
                 b = AssessGeneratorCommon.CreateBookWithoutData(
                             data.AssignmentName,
                             data.AssignmentName,
-                            data.First().Criteria.Select(c => c.Name).ToList(),
-                            data.First().Select(c => $"{c.Criterion.WeightPercentage}%").ToList(),
+                            firstStudentAssessed.Criteria.Select(c => c.Name).ToList(),
+                            firstStudentAssessed.Select(c => $"{c.Criterion.WeightPercentage}%").ToList(),
                             startDataRow,
                             startDataCol);
 
