@@ -193,7 +193,7 @@ namespace SheetWrapper
             }
             set
             {
-                s.Font.SetFromFont(value);
+                s.Font.SetFromFont(value.Name, value.Size);
             }
         }
 
