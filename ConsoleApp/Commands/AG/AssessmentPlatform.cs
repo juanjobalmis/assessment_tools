@@ -5,7 +5,7 @@ namespace AssessmentTools.Commands.AG
 {
     public class AssessmentPlatform
     {
-        public enum Target { Moodle, Gmail, Xlsx }
+        public enum Target { Moodlexml, Moodlecsv, Gmail, Xlsx }
         private Target target;
 
         public Target TargetPlatForm
@@ -33,7 +33,7 @@ namespace AssessmentTools.Commands.AG
                     target = (Target)Enum.Parse(typeof(Target), v.ToString());
                 else
                 {
-                    string message = $"{value} is not valid as assesment platform.\n" +
+                    string message = $"{value} is not valid as assessment platform.\n" +
                                       "Use: " + string.Join(", ", Enum.GetNames(typeof(Target)));
                     throw new ArgumentException(message);
                 }

@@ -5,7 +5,7 @@ using System.IO;
 
 namespace AssessmentTools.Commands
 {
-    class AssessmentGeneratorOptions : CommandOptions
+    public class AssessmentGeneratorOptions : CommandOptions
     {
         [Flags]
         private enum ForcedOption : ushort { studentNamesFile = 0x0001, targetPlatform = 0x0002 }
@@ -59,15 +59,18 @@ namespace AssessmentTools.Commands
                 $"\t\t\t * Name of the asignament.\n" +
                 $"\t\t\t * If it is not specified the current folder name is taken.\n" +
                 $"\t\t-t (--targetPlatform) <target>:\n" +
-                $"\t\t\t * -t moodle -> It generates a moodle calification format into moodle.xml file.\n" +
-                $"\t\t\t                To set the assignment Name and the student ID see Moodle doc at\n" +
-                $"\t\t\t                https://docs.moodle.org/38/en/Grade_import#XML_import \n" +
+                $"\t\t\t * -t moodlexml -> It generates a moodle calification format into moodle.xml file.\n" +
+                $"\t\t\t                   To set the assignment Name and the student ID see Moodle doc at\n" +
+                $"\t\t\t                   https://docs.moodle.org/38/en/Grade_import#XML_import \n" +
+                $"\t\t\t * -t moodlecsv -> It generates a CSV calification format into moodle.csv file.\n" +
+                $"\t\t\t                   We need to map Email with ID to identify a Student see\n" +
+                $"\t\t\t                   https://docs.moodle.org/38/en/Grade_import#CSV_import \n" +
                 $"\t\t\t * -t gmail -> It generates crypted credentials for SMTP server whether there are not.\n" +
                 $"\t\t\t               Then it will send a e-Mail to each estudent with their rubric information\n" +
                 $"\t\t\t               The message subject is the assignmentName value.\n\n" +
                 $"\t\t Note: The xlsx book file with the assessment has to have a Named cell or range\n" +
                 $"\t\t       called 'mark' to find out the assessment mark, grade or score in some targets." +
-                $"\n\n\nExample: {program} {COMMAND} -v -s studentsData.csv -n exercise1 -t moodle\n";
+                $"\n\n\nExample: {program} {COMMAND} -v -s studentsData.csv -n exercise1 -t moodlecsv\n";
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Reflection;
 
 namespace AssessmentTools.Utilities
 {
@@ -8,8 +7,8 @@ namespace AssessmentTools.Utilities
     {
         public static string ExecutableDirectory()
         {
-            string codeBase = Assembly.GetExecutingAssembly().CodeBase;
-            UriBuilder uri = new UriBuilder(codeBase);
+            string codeBase = AppDomain.CurrentDomain.BaseDirectory;
+            UriBuilder uri = new(codeBase);
             string path = Uri.UnescapeDataString(uri.Path);
             return Path.GetDirectoryName(path);
         }

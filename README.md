@@ -1,6 +1,6 @@
 # Assessment Tools
 
-* You have to install the **.NET Core 3.1** runtime.
+* You have to install the **.NET 6** runtime.
 * Tool to be used not only with **Moodle** but also with other similar assessment methods.
 
 * **How to use the program?**
@@ -31,7 +31,7 @@
 
 * assesst RUBRIC_GENERATOR Uses ...
 
-    ```
+    ```txt
         assesst RG --help
         assesst RG <options>
 
@@ -71,7 +71,7 @@
 
 * assesst ASSESSMENT_GENERATOR Uses ...
 
-    ```
+    ```txt
         assesst AG --help
         assesst AG  <options>
 
@@ -92,9 +92,12 @@
                          * Name of the asignament.
                          * If it is not specified the current folder name is taken.
                 -t (--targetPlatform) <target>:
-                         * -t moodle -> It generates a moodle calification format into moodle.xml file.
-                                        To set the assignment Name and the student ID see Moodle doc at
-                                        https://docs.moodle.org/38/en/Grade_import#XML_import
+                         * -t moodlexml -> It generates a moodle calification format into moodle.xml file.
+                                           To set the assignment Name and the student ID see Moodle doc at
+                                           https://docs.moodle.org/38/en/Grade_import#XML_import
+                         * -t moodlecsv -> It generates a CSV calification format into moodle.csv file.
+                                           We need to map Email with ID to identify a Student see
+                                           https://docs.moodle.org/38/en/Grade_import#CSV_import
                          * -t gmail -> It generates crypted credentials for SMTP server whether there are not.
                                        Then it will send a e-Mail to each estudent with their rubric information
                                        The message subject is the assignmentName value.
@@ -102,6 +105,6 @@
                 called 'mark' to find out the assessment mark or score in some targets.
     ```
 
-* **Example:** `assesst AG -v -s studentsData.csv -n exercise1 -t moodle`
+* **Example:** `assesst AG -v -s studentsData.csv -n exercise1 -t moodlcsv`
 
 ---

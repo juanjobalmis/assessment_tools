@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace AssessmentTools.Data
 {
+    
     public class Student : IEntityInfoToAssess
     {
         private const string INVALID_ID = "unknown";
@@ -39,6 +40,9 @@ namespace AssessmentTools.Data
             }
         }
 
+        public bool ValidEmail()
+            => Regex.IsMatch(Mail, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+
         public bool ValidID()
         {
             return id != INVALID_ID;
@@ -63,7 +67,7 @@ namespace AssessmentTools.Data
         {
             Student s = new Student();
 
-            string[] propertiesCSVMustContain = new string[] { "Name", "ID" };
+            string[] propertiesCSVMustContain = new string[] { "Name", "ID", "Mail" };
             foreach (var property in propertiesCSVMustContain)
                 if (!mapPropetyToColIndex.ContainsKey(property))
                     throw new ArgumentException($"The CSV file do not define {property} column.");

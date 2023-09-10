@@ -7,7 +7,7 @@ using AssessmentTools.Commands.AG;
 
 namespace AssessmentTools.Commands
 {
-    static class AssessmentGenerator
+    public static class AssessmentGenerator
     {
         private static List<string> RubricFilesForReporting(List<Student> studentsData, bool verbose = false)
         {
@@ -45,8 +45,11 @@ namespace AssessmentTools.Commands
 
             switch (options.AssessmentPlatform.TargetPlatForm)
             {
-                case AssessmentPlatform.Target.Moodle:
-                    AssessmentGeneratorToMoodle.Generate(options.AssignmentName, rubricFiles, studentsData, options.Verbose);
+                case AssessmentPlatform.Target.Moodlexml:
+                    AssessmentGeneratorToMoodleXml.Generate(options.AssignmentName, rubricFiles, studentsData, options.Verbose);
+                    break;
+                case AssessmentPlatform.Target.Moodlecsv:
+                    AssessmentGeneratorToMoodleCsv.Generate(options.AssignmentName, rubricFiles, studentsData, options.Verbose);
                     break;
                 case AssessmentPlatform.Target.Gmail:
                     AssessmentGeneratorToGMail.Generate(options.AssignmentName, rubricFiles, studentsData, options.Verbose);
