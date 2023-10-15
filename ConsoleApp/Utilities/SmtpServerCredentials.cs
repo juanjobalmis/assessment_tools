@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 
 
 namespace AssessmentTools.Utilities
@@ -16,7 +17,21 @@ namespace AssessmentTools.Utilities
         {
             ;
         }
-        public static SmtpServerCredentials CreateForGMail(string credentialsFile, bool askIfNotExist = true)
+
+        private enum ServerOption { GMail = 1, Office365 = 2 }
+
+        private static string Server(ServerOption option)
+        => option switch 
+        { 
+            ServerOption.GMail => "smtp.gmail.com", 
+            ServerOption.Office365 => "smtp.office365.com", 
+            _ => throw new Exception("Invalid server option") 
+        };
+
+
+        public static SmtpServerCredentials Create(
+                string credentialsFile,
+                bool askIfNotExist = true)
         {
             const string KEY = "secure";
             Credentials<SmtpServerCredentials> cm = new Credentials<SmtpServerCredentials>(credentialsFile);
@@ -26,19 +41,20 @@ namespace AssessmentTools.Utilities
             {
                 if (askIfNotExist)
                 {
-                    Console.WriteLine("A GMail account credentials are needed...");
+                    Console.WriteLine($"A SMTP Server account credentials are needed...");
+                    string smtpServer = Server(ConsoleE.ReadEnumOption<ServerOption>());
                     string user = ConsoleE.ReadEMail("User");
                     string passWord = ConsoleE.ReadPassword("Password");
                     credentials = new SmtpServerCredentials()
                     {
-                        Host = "smtp.gmail.com",
+                        Host = smtpServer,
                         Port = 587,
                         User = user,
                         PassWord = passWord,
                         EnableSSL = true
                     };
                     cm.Save(credentials, KEY);
-                    Console.WriteLine($"Credentials have been saved in {credentialsFile}\n");                    
+                    Console.WriteLine($"Credentials have been saved in {credentialsFile}\n");
                 }
                 else throw new Exception($"Credentials file {credentialsFile} for mailing do not exist.");
             }

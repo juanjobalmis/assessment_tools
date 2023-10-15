@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace AssessmentTools.Utilities
@@ -66,6 +68,32 @@ namespace AssessmentTools.Utilities
                     Console.WriteLine($"The Password must have at least one character. Try again...");
             } while (!valid);
             return passWord;
+        }
+
+        private static string TextsEnumOptions<T>() where T : Enum {
+            List<String> opciones = new();
+            foreach (int option in (int[])Enum.GetValues(typeof(T)))
+                opciones.Add($"{option} = {(T)Enum.ToObject(typeof(T), option)}");
+            return string.Join(", ", opciones);
+        }
+
+
+        public static T ReadEnumOption<T>() where T : Enum
+        {
+            int option;
+            bool valid;
+            var validOptions = (int[])Enum.GetValues(typeof(T));
+            string label = $"Options ({TextsEnumOptions<T>()})";
+            do
+            {
+                WriteLabel(label);
+                valid = int.TryParse(Console.ReadLine(), out option);
+                if (valid)
+                    valid = validOptions.Contains(option);
+                if (!valid)
+                    Console.WriteLine($"{option} is not a valid mut be {string.Join(", ", validOptions)}. Try again...");
+            } while (!valid);
+            return (T)Enum.ToObject(typeof(T), option);
         }
     }
 }

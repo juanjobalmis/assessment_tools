@@ -10,7 +10,7 @@ using System.Text;
 
 namespace AssessmentTools.Commands.AG
 {
-    public static class AssessmentGeneratorToGMail
+    public static class AssessmentGeneratorToEMail
     {
         private static string CredentialsPath
         {
@@ -24,7 +24,7 @@ namespace AssessmentTools.Commands.AG
         {
             get
             {
-                return SmtpServerCredentials.CreateForGMail(CredentialsPath);
+                return SmtpServerCredentials.Create(CredentialsPath);
             }
         }
 

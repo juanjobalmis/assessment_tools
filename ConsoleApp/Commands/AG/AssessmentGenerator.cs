@@ -51,8 +51,8 @@ namespace AssessmentTools.Commands
                 case AssessmentPlatform.Target.Moodlecsv:
                     AssessmentGeneratorToMoodleCsv.Generate(options.AssignmentName, rubricFiles, studentsData, options.Verbose);
                     break;
-                case AssessmentPlatform.Target.Gmail:
-                    AssessmentGeneratorToGMail.Generate(options.AssignmentName, rubricFiles, studentsData, options.Verbose);
+                case AssessmentPlatform.Target.Email:
+                    AssessmentGeneratorToEMail.Generate(options.AssignmentName, rubricFiles, studentsData, options.Verbose);
                     break;
                 case AssessmentPlatform.Target.Xlsx:
                     AssessmentGeneratorToBook.GenerateSummary(options.AssignmentName, rubricFiles, studentsData, options.Verbose);

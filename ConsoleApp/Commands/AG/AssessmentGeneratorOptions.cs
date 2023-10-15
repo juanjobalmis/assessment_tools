@@ -65,8 +65,8 @@ namespace AssessmentTools.Commands
                 $"\t\t\t * -t moodlecsv -> It generates a CSV calification format into moodle.csv file.\n" +
                 $"\t\t\t                   We need to map Email with ID to identify a Student see\n" +
                 $"\t\t\t                   https://docs.moodle.org/38/en/Grade_import#CSV_import \n" +
-                $"\t\t\t * -t gmail -> It generates crypted credentials for SMTP server whether there are not.\n" +
-                $"\t\t\t               Then it will send a e-Mail to each estudent with their rubric information\n" +
+                $"\t\t\t * -t email -> It generates crypted credentials for SMTP server whether there are not.\n" +
+                $"\t\t\t               Then it will send a e-Mail to each student with their rubric information\n" +
                 $"\t\t\t               The message subject is the assignmentName value.\n\n" +
                 $"\t\t Note: The xlsx book file with the assessment has to have a Named cell or range\n" +
                 $"\t\t       called 'mark' to find out the assessment mark, grade or score in some targets." +

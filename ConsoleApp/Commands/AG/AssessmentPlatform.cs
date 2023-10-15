@@ -5,7 +5,7 @@ namespace AssessmentTools.Commands.AG
 {
     public class AssessmentPlatform
     {
-        public enum Target { Moodlexml, Moodlecsv, Gmail, Xlsx }
+        public enum Target { Moodlexml, Moodlecsv, Email, Xlsx }
         private Target target;
 
         public Target TargetPlatForm
