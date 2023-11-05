@@ -46,7 +46,7 @@ namespace AssessmentTools.Utilities
             try
             {
                 using StreamWriter sw = new(File, false, Encoding.UTF8);
-                sw.Write(EncryptString(JsonSerializer.Serialize(data), accessKey));
+                sw.Write(JsonSerializer.Serialize(data));
             }
             catch (Exception e)
             {
@@ -58,7 +58,7 @@ namespace AssessmentTools.Utilities
             try
             {
                 using StreamReader sr = new(File, Encoding.UTF8);
-                return JsonSerializer.Deserialize<T>(DecryptString(sr.ReadToEnd(), accessKey));
+                return JsonSerializer.Deserialize<T>(sr.ReadToEnd());
             }
             catch (Exception e)
             {

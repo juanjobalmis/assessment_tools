@@ -8,11 +8,11 @@ namespace AssessmentTools.Utilities
     [Serializable]
     public class SmtpServerCredentials
     {
-        public string Host { get; private set; }
-        public int Port { get; private set; }
-        public string User { get; private set; }
-        public string PassWord { get; private set; }
-        public bool EnableSSL { get; private set; }
+        public string Host { get; set; }
+        public int Port { get; set; }
+        public string User { get; set; }
+        public string PassWord { get; set; }
+        public bool EnableSSL { get; set; }
         private SmtpServerCredentials()
         {
             ;
