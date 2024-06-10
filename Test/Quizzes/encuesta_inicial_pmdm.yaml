@@ -1,0 +1,71 @@
+﻿preguntas:
+- enunciado: ¿Cual de las siguiente tecnologías no es un lenguaje de programación?
+  respuestas:
+  - texto: Dart
+    correcta: true
+  - texto: Kotlin
+    correcta: true
+  - texto: Flutter
+    correcta: false
+  - texto: Swift
+    correcta: true
+- enunciado: ¿Qué es un IDE?
+  respuestas:
+  - texto: Un entorno de desarrollo integrado
+    correcta: true
+  - texto: Un lenguaje de programación
+    correcta: false
+  - texto: Un sistema operativo
+    correcta: false
+  - texto: Un framework
+    correcta: false
+- enunciado: ¿Cual de los siguientes programas no es un IDE?
+  respuestas:
+  - texto: Android Studio
+    correcta: false
+  - texto: Visual Studio Code
+    correcta: false
+  - texto: Flutter
+    correcta: true
+  - texto: IntelliJ IDEA
+    correcta: false
+- enunciado: ¿Qué es un framework?
+  respuestas:
+  - texto: Un conjunto de librerías y herramientas para facilitar el desarrollo
+    correcta: true
+  - texto: Un lenguaje de programación
+    correcta: false
+  - texto: Un sistema operativo
+    correcta: false
+  - texto: Un IDE
+    correcta: false
+- enunciado: Crees que un programa nativo de Android puede funcionar en un iPhone
+  respuestas:
+  - texto: Sí, si se programa en Java
+    correcta: false
+  - texto: Sí, si se programa en Swift
+    correcta: false  
+  - texto: Sí, si se programa en Dart
+    correcta: false
+  - texto: No en ningún caso
+    correcta: true
+- enunciado: ¿Cual de los siguientes tecnologías es multiplataforma?
+  respuestas:
+  - texto: Flutter
+    correcta: true
+  - texto: MAUI
+    correcta: true
+  - texto: KMP
+    correcta: true
+  - texto: React
+    correcta: true
+- enunciado: ¿Qué plataformas tiene como destino <em>'Kotlin Multiplatform'</em> (<b>KMP</b>)?
+  respuestas:
+  - texto: Android
+    correcta: true
+  - texto: iOS
+    correcta: true
+  - texto: Web
+    correcta: true
+  - texto: Windows
+    correcta: true    

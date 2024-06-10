@@ -1,0 +1,283 @@
+﻿<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/encuesta_inicial_pmdm</text>
+    </category>
+  </question>
+  <question type="description">
+    <name>
+      <text>Instrucciones de la prueba</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+            <p>Cada pregunta puede tener <b>una o más</b> de una respuestas correctas</p>.
+            <p>La puntuación de cada pregunta se divide entre el número de respuestas correctas</p>.
+            <p>Cada respuesta incorrecta resta también en proporción al número de posibilidades incorrectas</p>.
+            <p>Tiene dos intentos para realizar la prueba y la calificación final será la media de ambos</p>.
+            <p>Una vez finalice el plazo para realizar la prueba, podrá ver aquellos casos donde ha fallado y no podrá volver a realizarla</p>.
+            ]]></text>
+    </questiontext>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4>¿Cual de las siguiente tecnologías no es un lenguaje de programación?</h4>]]></text>
+    </questiontext>
+    <defaultgrade>1.4285714285714286</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="33.333" format="html">
+      <text><![CDATA[<p>Dart</p>]]></text>
+    </answer>
+    <answer fraction="33.333" format="html">
+      <text><![CDATA[<p>Kotlin</p>]]></text>
+    </answer>
+    <answer fraction="-100.000" format="html">
+      <text><![CDATA[<p>Flutter</p>]]></text>
+    </answer>
+    <answer fraction="33.333" format="html">
+      <text><![CDATA[<p>Swift</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4>¿Qué es un IDE?</h4>]]></text>
+    </questiontext>
+    <defaultgrade>1.4285714285714286</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Un entorno de desarrollo integrado</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Un lenguaje de programación</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Un sistema operativo</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Un framework</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4>¿Cual de los siguientes programas no es un IDE?</h4>]]></text>
+    </questiontext>
+    <defaultgrade>1.4285714285714286</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Android Studio</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Visual Studio Code</p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Flutter</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>IntelliJ IDEA</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4>¿Qué es un framework?</h4>]]></text>
+    </questiontext>
+    <defaultgrade>1.4285714285714286</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Un conjunto de librerías y herramientas para facilitar el desarrollo</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Un lenguaje de programación</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Un sistema operativo</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Un IDE</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4>Crees que un programa nativo de Android puede funcionar en un iPhone</h4>]]></text>
+    </questiontext>
+    <defaultgrade>1.4285714285714286</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Sí, si se programa en Java</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Sí, si se programa en Swift</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Sí, si se programa en Dart</p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>No en ningún caso</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4>¿Cual de los siguientes tecnologías es multiplataforma?</h4>]]></text>
+    </questiontext>
+    <defaultgrade>1.4285714285714286</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>Flutter</p>]]></text>
+    </answer>
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>MAUI</p>]]></text>
+    </answer>
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>KMP</p>]]></text>
+    </answer>
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>React</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4>¿Qué plataformas tiene como destino <em>'Kotlin Multiplatform'</em> (<b>KMP</b>)?</h4>]]></text>
+    </questiontext>
+    <defaultgrade>1.4285714285714286</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>Android</p>]]></text>
+    </answer>
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>iOS</p>]]></text>
+    </answer>
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>Web</p>]]></text>
+    </answer>
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>Windows</p>]]></text>
+    </answer>
+  </question>
+</quiz>

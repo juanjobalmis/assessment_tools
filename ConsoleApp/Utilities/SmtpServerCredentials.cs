@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Security.Cryptography;
 using System.Text;
 
 
@@ -8,6 +9,7 @@ namespace AssessmentTools.Utilities
     [Serializable]
     public class SmtpServerCredentials
     {
+        private const string KEY = "secure";
         public string Host { get; set; }
         public int Port { get; set; }
         public string User { get; set; }
@@ -28,12 +30,37 @@ namespace AssessmentTools.Utilities
             _ => throw new Exception("Invalid server option") 
         };
 
+        static string EncryptString(string plaintext)
+        {
+            byte[] plaintextBytes = Encoding.UTF8.GetBytes(plaintext);
+            Rfc2898DeriveBytes passwordBytes = new(KEY, 20);
+
+            var encryptor = Aes.Create();
+            encryptor.Key = passwordBytes.GetBytes(32);
+            encryptor.IV = passwordBytes.GetBytes(16);
+            using MemoryStream ms = new();
+            using CryptoStream cs = new(ms, encryptor.CreateEncryptor(), CryptoStreamMode.Write);
+            cs.Write(plaintextBytes, 0, plaintextBytes.Length);
+            return Convert.ToBase64String(ms.ToArray());
+        }
+ 
+        static string DecryptString(string encrypted)
+        {
+            byte[] encryptedBytes = Convert.FromBase64String(encrypted);
+            Rfc2898DeriveBytes passwordBytes = new(KEY, 20);
+            var encryptor = Aes.Create();
+            encryptor.Key = passwordBytes.GetBytes(32);
+            encryptor.IV = passwordBytes.GetBytes(16);
+            using MemoryStream ms = new();
+            using CryptoStream cs = new(ms, encryptor.CreateDecryptor(), CryptoStreamMode.Write);
+            cs.Write(encryptedBytes, 0, encryptedBytes.Length);
+            return Encoding.UTF8.GetString(ms.ToArray());
+        }
 
         public static SmtpServerCredentials Create(
                 string credentialsFile,
                 bool askIfNotExist = true)
         {
-            const string KEY = "secure";
             Credentials<SmtpServerCredentials> cm = new Credentials<SmtpServerCredentials>(credentialsFile);
             SmtpServerCredentials credentials;
 
@@ -53,14 +80,14 @@ namespace AssessmentTools.Utilities
                         PassWord = passWord,
                         EnableSSL = true
                     };
-                    cm.Save(credentials, KEY);
+                    cm.Save(credentials);
                     Console.WriteLine($"Credentials have been saved in {credentialsFile}\n");
                 }
                 else throw new Exception($"Credentials file {credentialsFile} for mailing do not exist.");
             }
             else
             {
-                credentials = cm.Load(KEY);
+                credentials = cm.Load();
             }
             return credentials;
         }
