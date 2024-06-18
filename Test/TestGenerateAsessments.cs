@@ -13,14 +13,14 @@ public class TestGenerateAsessments
     [Fact]
     public void GenerateMoodleCsvAssessment()
     {
-        // at ag -v -s alumnos.csv -t moodlecsv
+        // at ag -v -s alumnos.csv -p moodlecsv
         AssessmentGeneratorOptions options = new(new string[]
         {
             "ag",
             "-v",
             "-s",
             "alumnos.csv",
-            "-t",
+            "-p",
             "moodlecsv"
         });
 
@@ -29,14 +29,14 @@ public class TestGenerateAsessments
     [Fact]
     public void GenerateMoodleXmlAssessment()
     {
-        // at ag -v -s alumnos.csv -t moodlexml
+        // at ag -v -s alumnos.csv -p moodlexml
         AssessmentGeneratorOptions options = new(new string[]
         {
             "ag",
             "-v",
             "-s",
             "alumnos.csv",
-            "-t",
+            "-p",
             "moodlexml"
         });
 
@@ -45,14 +45,14 @@ public class TestGenerateAsessments
     [Fact]
     public void GenerateMoodleExcelAssessment()
     {
-        // at ag -v -s alumnos.csv -t xlsx
+        // at ag -v -s alumnos.csv -p xlsx
         AssessmentGeneratorOptions options = new(new string[]
         {
             "ag",
             "-v",
             "-s",
             "alumnos.csv",
-            "-t",
+            "-p",
             "xlsx"
         });
 

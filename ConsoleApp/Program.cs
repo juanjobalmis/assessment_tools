@@ -10,7 +10,6 @@ namespace AssessmentTools
             try
             {
                 CommandManager cm = new CommandManager(args);
-
                 switch (cm.CommandOptions)
                 {
                     case RubricGeneratorOptions rgo:
@@ -18,6 +17,9 @@ namespace AssessmentTools
                         break;
                     case AssessmentGeneratorOptions ago:
                         AssessmentGenerator.Generate(ago);
+                        break;
+                    case QuizGeneratorOptions qgo:
+                        QuizGenerator.Generate(qgo);
                         break;
                     default:
                         break;

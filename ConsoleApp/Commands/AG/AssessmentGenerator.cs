@@ -33,7 +33,7 @@ namespace AssessmentTools.Commands
         public static void Generate(AssessmentGeneratorOptions options)
         {
             if (options == null)
-                throw new ArgumentNullException("options", "TemplateGeneratorOptions needs to be instantiated.");
+                throw new ArgumentNullException("options", "AssessmentGeneratorOptions needs to be instantiated.");
 
             List<Student> studentsData = StudentsData.LoadFromCSV(options.StudentNamesFile);
             if (studentsData.Count == 0)

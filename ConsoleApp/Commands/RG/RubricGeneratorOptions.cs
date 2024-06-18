@@ -11,8 +11,8 @@ namespace AssessmentTools.Commands
 
         public const string COMMAND = "RG";
         public const string COMMAND_EXTENDED = "RUBRIC_GENERATOR";
-        protected override string Command => RubricGeneratorOptions.COMMAND;
-        protected override string CommandExtended => RubricGeneratorOptions.COMMAND_EXTENDED;
+        protected override string Command => COMMAND;
+        protected override string CommandExtended => COMMAND_EXTENDED;
 
         public string RubricTemplate { get; private set; }
         public string TemplateExtension { get; private set; }
@@ -45,6 +45,10 @@ namespace AssessmentTools.Commands
                 case "-v":
                     Verbose = true;
                     break;
+                case "--test":
+                case "-t":
+                    Test = true;
+                    break;
                 case "--normalized":
                 case "-n":
                     NormalizedName = true;
@@ -69,6 +73,7 @@ namespace AssessmentTools.Commands
                 base.Help(program) +
                 $"\t<options>\n" +
                 $"{CommonHelp()[CommonHelpOption.Verbose]}\n" +
+                $"{CommonHelp()[CommonHelpOption.Test]}\n" +
                 $"{CommonHelp()[CommonHelpOption.StudentNamesFile]}\n" +
                 $"\t\t-n (--normalized):\n" +
                 $"\t\t\t * Normalize the character to Unicode C.\n" +

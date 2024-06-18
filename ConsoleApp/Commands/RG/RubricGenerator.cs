@@ -256,7 +256,7 @@ namespace AssessmentTools.Commands
         public static void Generate(RubricGeneratorOptions options)
         {
             if (options == null)
-                throw new ArgumentNullException("options", "TemplateGeneratorOptions needs to be instantiated.");
+                throw new ArgumentNullException("options", "RubricGeneratorOptions needs to be instantiated.");
             List<string> deliveredFolders = new List<string>(Directory.GetDirectories(Directory.GetCurrentDirectory()));
             if (deliveredFolders.Count == 0)
                 throw new GeneratorException($"No sub-folders found in {Directory.GetCurrentDirectory()}");

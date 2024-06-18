@@ -8,11 +8,13 @@ namespace AssessmentTools.Commands
     {
         protected ushort ForcedOptionsSetMask = 0;
         public bool Verbose { get; protected set; }
+        public bool Test { get; protected set; }
         public string StudentNamesFile { get; protected set; }
 
         protected CommandOptions(string[] mainArguments)
         {
             Verbose = false;
+            Test = false;
             StudentNamesFile = null;
             ForcedOptionsSetMask = 0;
 
@@ -85,7 +87,7 @@ namespace AssessmentTools.Commands
                 $"\t{program} {Command} --help\n" +
                 $"\t{program} {Command} <options>\n\n";
         }
-        protected enum CommonHelpOption { Verbose, StudentNamesFile }
+        protected enum CommonHelpOption { Verbose, Test, StudentNamesFile }
         protected static Dictionary<CommonHelpOption, string> CommonHelp()
         {
             Dictionary<CommonHelpOption, string> help = new Dictionary<CommonHelpOption, string>();
@@ -94,6 +96,10 @@ namespace AssessmentTools.Commands
             helpMsg = $"\t\t-v (--verbose):\n" +
             $"\t\t\t * To give feedback of the process.";
             help.Add(CommonHelpOption.Verbose, helpMsg);
+
+            helpMsg = $"\t\t-t (--test):\n" +
+            $"\t\t\t * To indicate we are testing the command.";
+            help.Add(CommonHelpOption.Test, helpMsg);
 
             helpMsg = $"\t\t-s (--studentNamesFile) <studentNamesFile>:\n" +
             $"\t\t\t * Is a CSV file with ';' separator.\n" +

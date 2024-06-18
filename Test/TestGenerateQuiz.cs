@@ -1,18 +1,13 @@
-using System.Text;
-using QuizGen;
-
 namespace Test;
+
+using System.Text;
+using AssessmentTools.Commands;
+using QuizGen;
 
 public class TestGenerateQuiz
 {
     [Fact]
-    public void SetActivityDirectory()
-    {
-        string currentDirectory = Directory.GetCurrentDirectory();
-        Directory.SetCurrentDirectory(Path.Combine(currentDirectory, "..", "..", "..", "Quizzes"));
-    }
-    [Fact]
-    public void GenerateQuiz()
+    public void TestYamlParser()
     {
         using StreamReader sR = new StreamReader(
                    "encuesta_inicial_pmdm.yaml",
@@ -27,5 +22,19 @@ public class TestGenerateQuiz
             false,
             Encoding.UTF8);
         sW.WriteLine(quiz.ToXML(Path.GetFileNameWithoutExtension("encuesta_inicial_pmdm.xml")));
+    }
+    [Fact]
+    public void GenerateQuizBank()
+    {
+        // at qg -v -q BancoDePreguntas.xml
+        QuizGeneratorOptions options = new(new string[]
+        {
+            "ag",
+            "-v",
+            "-q",
+            "BancoDePreguntas.xml"
+        });
+
+        QuizGenerator.Generate(options);
     }
 }

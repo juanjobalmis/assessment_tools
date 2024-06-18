@@ -17,8 +17,9 @@ namespace AssessmentTools.Utilities
         {
             try
             {
+                JsonSerializerOptions so = new() { WriteIndented = true };
                 using StreamWriter sw = new(File, false, Encoding.UTF8);
-                sw.Write(JsonSerializer.Serialize(data));
+                sw.Write(JsonSerializer.Serialize(data, so));
             }
             catch (Exception e)
             {

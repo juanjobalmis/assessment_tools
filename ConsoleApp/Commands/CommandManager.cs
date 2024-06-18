@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using OfficeOpenXml.Export.ToDataTable;
 
 namespace AssessmentTools.Commands
 {
@@ -37,6 +38,12 @@ namespace AssessmentTools.Commands
                 case AssessmentGeneratorOptions.COMMAND_EXTENDED:
                     CommandOptions = new AssessmentGeneratorOptions(mainArguments);
                     break;
+
+                case QuizGeneratorOptions.COMMAND:
+                case QuizGeneratorOptions.COMMAND_EXTENDED:
+                    CommandOptions = new QuizGeneratorOptions(mainArguments);
+                    break;
+
                 case "--help":
                     throw new CommandException(this);
                 default:
@@ -53,6 +60,8 @@ namespace AssessmentTools.Commands
                 $"\t\t\t * To generate rubrics from an assessment template.\n" +
                 $"\t\t{AssessmentGeneratorOptions.COMMAND} ({AssessmentGeneratorOptions.COMMAND_EXTENDED}):\n" +
                 $"\t\t\t * To generate an assessment report from a rubrics folder.\n" +
+                $"\t\t{QuizGeneratorOptions.COMMAND} ({QuizGeneratorOptions.COMMAND_EXTENDED}):\n" +
+                $"\t\t\t * To generate a quiz from an assessment report.\n" +
                 $"\nType for more information: {program} <command> --help\n";
         }
 
