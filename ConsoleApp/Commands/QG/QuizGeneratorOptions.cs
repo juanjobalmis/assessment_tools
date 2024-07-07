@@ -63,8 +63,34 @@ namespace AssessmentTools.Commands
                 $"{CommonHelp()[CommonHelpOption.Verbose]}\n" +
                 $"{CommonHelp()[CommonHelpOption.Test]}\n" +
                 $"\t\t-o (--outputFolder) <outputFolder>:\n" +
-                $"\t\t\t * To specify the output folder for the generated quiz banks for moodle.\n" +
-                $"\n\n\nExample: {program} {Command} -v -o quizzes\n";
+                $"\t\t\t * To specify the output folder for the generated quiz banks for moodle.\n\n" +
+                $"\t\t Note: The YAML file name has to follow the pattern 'block-theme.yaml' to categorize the questions.\n" +
+                $"\t\t in the moodle quiz bank for the curse.\n" +
+                $"\t\t Besides, the YAML file must have the following structure:\n\n" +
+                $"\t\t\t preguntas:\n" +
+                $"\t\t\t - enunciado: <html of the question 1>\n" +
+                $"\t\t\t   respuestas:\n" +
+                $"\t\t\t   - texto: <html of the answer 1>\n" +
+                $"\t\t\t     correcta: <true or false depending if the answer is correct or not>\n" +
+                $"\t\t\t   - texto: <html of the answer 2>\n" +
+                $"\t\t\t     correcta: <true or false depending if the answer is correct or not>\n" +
+                $"\t\t\t - enunciado: <html of the question 2>\n" +
+                $"\t\t\t   respuestas:\n" +
+                $"\t\t\t   - texto: <html of the answer 1>\n" +
+                $"\t\t\t     correcta: <true or false depending if the answer is correct or not>\n" +
+                $"\t\t\t   ...\n\n" +
+                $"\n\n\nExample: {program} {Command} -v -o quizzes\n\n";
         }
     }
 }
+
+// preguntas:
+// - enunciado: ¿Qué condición <b>mínima</b> es necesaria para <b>ejecutar aplicaciones .NET</b> en un sistema operativo?
+//   respuestas:
+//   - texto: Tener el CLR instalado.
+//     correcta: true
+//   - texto: Tener el JRE instalado.
+// - enunciado: ¿Qué es un <b>ensamble</b> o <b>ensamblado</b> en .NET?
+//   respuestas:
+//   - texto: Es un fichero con el código ensamblador nativo de la máquina.
+//     correcta: false
