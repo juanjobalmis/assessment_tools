@@ -1,0 +1,71 @@
+preguntas:
+- enunciado: La programación orientada a objetos (POO)...
+  respuestas:
+  - texto: aborda los problemas a través de unidades lógicas denominadas objetos.
+    correcta: true
+  - texto: generará <b>baja</b> reusabilidad del código.
+    correcta: false
+  - texto: permite representar de forma abstracta los problemas.
+    correcta: true
+  - texto: incluye estrategias de la programación imperativa y estructurada.
+    correcta: true
+- enunciado: ¿Qué es un Tipo Abstracto de Datos o TAD?
+  respuestas:
+  - texto: Es concreción en código de un tipo en el lenguaje.
+    correcta: false
+  - texto: Son entidades abstractas que intervienen en un problema.
+    correcta: true
+  - texto: Vienen predefinidos en el lenguaje C#.
+    correcta: false
+  - texto: Es una definición abstracta, completa y no ambigua de una estructura de datos junto con el conjunto de operaciones que se pueden hacer sobre ellos.
+    correcta: true
+- enunciado: Una <b>clase</b> en POO
+  respuestas:
+  - texto: Implementa una concreción de una abstracción.
+    correcta: true        
+  - texto: Es la creación de un determinado tipo de objeto en memoria.
+    correcta: false
+  - texto: Siempre establece relaciones con otras clases.
+    correcta: false
+  - texto: Define objetos que van a tener la misma estructura y comportamiento.
+    correcta: true        
+- enunciado: Un <b>objeto</b> en POO
+  respuestas:
+  - texto: Es la instancia en memoria de un elemento concreto de la clase.
+    correcta: true        
+  - texto: Se suelen crear con la palabra reservada <code>new</code>.
+    correcta: true        
+  - texto: Es <b>igual</b> a otro objeto si tiene el mismo estado.
+    correcta: true        
+  - texto: Tendrá una serie de operaciones que podrán cambiar o no su estado.
+    correcta: true        
+- enunciado: Los atributos de <b>instancia</b>
+  respuestas:
+  - texto: Necesitaré de un objeto instanciado en memoria para acceder a ellos.
+    correcta: true        
+  - texto: Serán valores diferentes en memoria para cada objeto.
+    correcta: true        
+  - texto: Son visibles desde cualquier método de la clase (ya sea de instancia o no).
+    correcta: false
+  - texto: Almacenan características comunes a todos los objetos de una clase.
+    correcta: false
+- enunciado: En C#
+  respuestas:
+  - texto: Podemos usar el operador <code>new</code> para instanciar objetos.
+    correcta: true        
+  - texto: Cualquier tipo de dato instanciado en memoria es un objeto en el fondo.
+    correcta: true        
+  - texto: Usaremos el operador <code>.</code> para acceder a los atributos y las operaciones públicos que implementa un objeto.
+    correcta: true        
+  - texto: Los objetos definidos por nosotros suelen ser tipos <b>referencia</b>.
+    correcta: true        
+- enunciado: Los <b>atributos</b> de una clase
+  respuestas:
+  - texto: También se conocen como campos o propiedades dependiendo del contexto. 
+    correcta: true        
+  - texto: Me indicarán el estado de un objeto en memoria.
+    correcta: true        
+  - texto: Son siempre constantes.
+    correcta: false
+  - texto: Solo podré acceder a ellos si he instanciado un objeto en memoria.
+    correcta: false

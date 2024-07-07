@@ -6,33 +6,29 @@ using QuizGen;
 
 public class TestGenerateQuiz
 {
-    [Fact]
-    public void TestYamlParser()
+    public TestGenerateQuiz()
     {
-        using StreamReader sR = new StreamReader(
-                   "encuesta_inicial_pmdm.yaml",
-                   Encoding.UTF8);
-        string yaml = sR.ReadToEnd();
-
-        Quiz quiz = Quiz.FromYAML(yaml);
-        Console.WriteLine(quiz);
-
-        using StreamWriter sW = new StreamWriter(
-            "encuesta_inicial_pmdm.xml",
-            false,
-            Encoding.UTF8);
-        sW.WriteLine(quiz.ToXML(Path.GetFileNameWithoutExtension("encuesta_inicial_pmdm.xml")));
+        string currentDirectory = Directory.GetCurrentDirectory();
+        if (!currentDirectory.EndsWith("assets"))
+            Directory.SetCurrentDirectory(Path.Combine(currentDirectory, "..", "..", "..", "assets"));
     }
+
+    // [Fact]
+    // public void GenerateYamlQuizFromMock()
+    // {        
+    //     File.WriteAllText("QuizMock.yaml", QuizGeneratorMock.Get().ToYAML());
+    // }
+
     [Fact]
     public void GenerateQuizBank()
     {
-        // at qg -v -q BancoDePreguntas.xml
+        // at qg -v -o BancoDePreguntas
         QuizGeneratorOptions options = new(new string[]
         {
             "ag",
             "-v",
-            "-q",
-            "BancoDePreguntas.xml"
+            "-o",
+            "BancoDePreguntas"
         });
 
         QuizGenerator.Generate(options);

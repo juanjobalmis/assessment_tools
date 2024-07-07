@@ -1,0 +1,97 @@
+preguntas:
+- enunciado: ¿Cual de las siguientes afirmaciones <b>NO</b> es un problema de los <b>programas monolíticos</b>?
+  respuestas:
+  - texto: Generan código <em>'spaghetti'</em>.
+    correcta: false
+  - texto: Tiempo elevado de corrección de errores.
+    correcta: false
+  - texto: Baja reusabilidad del código.
+    correcta: false
+  - texto: Fácil mantenimiento, código no duplicado o repetido.
+    correcta: true
+- enunciado: ¿Cuando se produce <b>alto acoplamiento</b> entre módulos?
+  respuestas:
+  - texto: Se produce cuando un módulo realiza más de una tarea.
+    correcta: false
+  - texto: Se produce cuando un módulo es muy usado por otros módulos.
+    correcta: false
+  - texto: Se produce cuando un sub-modulo necesita conocer algo de la implementación de su llamador.
+    correcta: true
+  - texto: Se produce cuando un módulo necesita conocer algo de la implementación de sus sub-módulos.
+    correcta: true
+  - texto: Cuando un módulo llama a un sub-módulo para realizar parte de su tarea.
+    correcta: false
+- enunciado: ¿Cuando se produce <b>baja cohesión</b> entre módulos?
+  respuestas:
+  - texto: Se produce cuando un módulo realiza más de una tarea.
+    correcta: true
+  - texto: Se produce cuando un módulo es muy usado por otros módulos.
+    correcta: false
+  - texto: Se produce cuando un sub-modulo necesita conocer algo de la implementación de su llamador.
+    correcta: false
+  - texto: Se produce cuando un módulo necesita conocer algo de la implementación de sus sub-modulos.
+    correcta: false
+  - texto: Cuando un módulo llama a un sub-módulo para realizar parte de su tarea.
+    correcta: false
+- enunciado: Para una correcta modularización buscaré.
+  respuestas:
+  - texto: Módulos con alta cohesion.
+    correcta: true
+  - texto: Módulos con alto acoplamiento.
+    correcta: false
+  - texto: Módulos con bajo acoplamiento.
+    correcta: true
+  - texto: Módulos con baja cohesion.
+    correcta: false
+  - texto: La definición del interfaz no sera importante.
+    correcta: false
+- enunciado: ¿Qué es la <b>signatura</b> de un método?
+  respuestas:
+  - texto: Su nombre o identificador.
+    correcta: false
+  - texto: Su identificador más los parámetros de entrada.
+    correcta: false
+  - texto: Su identificador más los parámetros de entrada y salida.
+    correcta: true
+  - texto: Ninguna de las respuestas anteriores es correcta.
+    correcta: false
+- enunciado: ¿Cual de las siguientes <b>signaturas</b> de método sería las más correcta?
+  respuestas:
+  - texto: <code>static void Invierte(string texto)</code>
+    correcta: false
+  - texto: <code>static void Invierte(ref string texto)</code>
+    correcta: false
+  - texto: <code>static void InvierteTexto(string texto, out string textoInvertido)</code>
+    correcta: false
+  - texto: <code>static string Invierte(string texto)</code>
+    correcta: true
+  - texto: <code>static string InvierteTexto(string t)</code>
+    correcta: false
+- enunciado: ¿Cual de las siguientes <b>signaturas</b> de método sería las más correcta?
+  respuestas:
+  - texto: <code>static void Extrae(double numero, ref double parteReal, ref double parteDecimal)</code>
+    correcta: false
+  - texto: <code>static double ExtraeParteRealYDecimal(double numero, out double parteDecimal)</code>
+    correcta: false
+  - texto: <code>static void extrae(double n, out double parteReal, out double parteDecimal)</code>
+    correcta: false
+  - texto: <code>static (double parteReal, double parteDecimal) Extrae(double n)</code>
+    correcta: false
+  - texto: <code>static (double parteReal, double parteDecimal) ExtraeParteRealYDecimal(double n)</code>
+    correcta: false
+  - texto: Ninguna porque la <em>'Y'</em> me indica que es un método que hace más de una cosa y la mejor opción sería dividirlo en 2.
+    correcta: true
+- enunciado: ¿Puede devolver un método más de un parámetro?
+  respuestas:
+  - texto: No nunca.
+    correcta: false
+  - texto: Sí, siempre y cuando el método solo produzca diversos resultados tras hacer varias cosas.
+    correcta: false
+  - texto: Sí siempre, pero <b>solo</b> utilizado el modificador <code>out</code>
+    correcta: false
+  - texto: Sí, siempre y cuando el método solo haga una cosa.
+    correcta: true
+  - texto: Sí, siempre y cuando <b>uno esté subordinado a otro</b> y no retornemos void.
+    correcta: false
+  - texto: Ninguna de las respuestas anteriores es válida.
+    correcta: false

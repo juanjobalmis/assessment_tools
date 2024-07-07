@@ -1,0 +1,83 @@
+preguntas:
+- enunciado: Al conjunto de instrucciones que se repiten dentro de un bucle se les denomina...
+  respuestas:
+  - texto: loop.
+    correcta: false
+  - texto: condición del bucle.
+    correcta: false
+  - texto: iteración del bucle.
+    correcta: false
+  - texto: cuerpo del bucle.
+    correcta: true
+- enunciado: Cuando los valores de la expresión o condición de salida del bucle nunca se modifican se producirá un bucle...
+  respuestas:
+  - texto: anidado.
+    correcta: false
+  - texto: acumulador.
+    correcta: false
+  - texto: inmutable.
+    correcta: false
+  - texto: infinito.
+    correcta: true
+- enunciado: En un <b>contador</b> incrementamos una variable normalmente de tipo...
+  respuestas:
+  - texto: real en un valor fijo.
+    correcta: false
+  - texto: cadena en un valor fijo.
+    correcta: false
+  - texto: entero en un valor fijo.
+    correcta: true
+  - texto: entero en un valor variable.
+    correcta: false
+- enunciado: ¿Qué es un <b><em>'flag'</em></b>?
+  respuestas:
+  - texto: No existe tal concepto en algoritmia.
+    correcta: false
+  - texto: Genera un <b>evento</b> al producirse.
+    correcta: false
+  - texto: Es un esquema algoritmico que me permitirá saber si se ha producido cierta condición durante la ejecución de un bucle.
+    correcta: true
+  - texto: Es un cadena que pasa de "0" a "1" al producirse un error.
+    correcta: false
+- enunciado: Los bucles <code>do-while</code>
+  respuestas:
+  - texto: El cuerpo del bucle se ejecuta al menos una vez.
+    correcta: true
+  - texto: Son idénticos a los while.
+    correcta: false
+  - texto: Son idénticos a los while con un contador incorporado.
+    correcta: false
+  - texto: Solo finalizan si usamos un <em>'flag'</em> como condición de salida.
+    correcta: false
+- enunciado: La clausula <code>continue</code>
+  respuestas:
+  - texto: Debe ir siempre acompañada de un <code>break</code>.
+    correcta: false
+  - texto: Deberemos evitarla.
+    correcta: true
+  - texto: Finaliza la ejecución de un bucle.
+    correcta: false
+  - texto: Detiene la ejecución del cuerpo del bucle y fuerza la evaluación de la condición de salida.
+    correcta: true
+- enunciado: Los bucles anidados se dan cuando tenemos un...
+  respuestas:
+  - texto: bucle dentro de otro bucle.
+    correcta: true
+  - texto: condicional múltiple dentro de un bucle.
+    correcta: false
+  - texto: <code>break</code> dentro de un bucle. 
+    correcta: false
+  - texto: bucle infinito.
+    correcta: false
+- enunciado: Dado el siguiente código... <code>int i = 0; for(; i<100; ++i);{ Console.WriteLine(i+1); }</code>
+  respuestas:
+  - texto: Mostrará los valores de 0 al 99
+    correcta: false
+  - texto: Mostrará los valores de 1 al 100
+    correcta: false
+  - texto: Dará error de compilación
+    correcta: false
+  - texto: Mostrará el valor 1
+    correcta: false
+  - texto: Mostrará el valor 101
+    correcta: true

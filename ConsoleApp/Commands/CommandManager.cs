@@ -61,7 +61,7 @@ namespace AssessmentTools.Commands
                 $"\t\t{AssessmentGeneratorOptions.COMMAND} ({AssessmentGeneratorOptions.COMMAND_EXTENDED}):\n" +
                 $"\t\t\t * To generate an assessment report from a rubrics folder.\n" +
                 $"\t\t{QuizGeneratorOptions.COMMAND} ({QuizGeneratorOptions.COMMAND_EXTENDED}):\n" +
-                $"\t\t\t * To generate a quiz from an assessment report.\n" +
+                $"\t\t\t * To generate a quiz from YAML format.\n" +
                 $"\nType for more information: {program} <command> --help\n";
         }
 

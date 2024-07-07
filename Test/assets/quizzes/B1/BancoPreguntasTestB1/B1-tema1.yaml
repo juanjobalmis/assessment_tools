@@ -1,0 +1,81 @@
+preguntas:
+- enunciado: ¿Qué condición <b>mínima</b> es necesaria para <b>ejecutar aplicaciones .NET</b> en un sistema operativo?
+  respuestas:
+  - texto: Tener el CLR instalado.
+    correcta: true
+  - texto: Tener el JRE instalado.
+    correcta: false
+  - texto: Tener el SDK .NET instalado.
+    correcta: false
+  - texto: Utilizar el sistema operativo Windows.
+    correcta: false
+- enunciado: ¿Qué es un <b>ensamble</b> o <b>ensamblado</b> en .NET?
+  respuestas:
+  - texto: Es un fichero con el código ensamblador nativo de la máquina.
+    correcta: false
+  - texto: Es un fichero que contiene solo el código en IL para el CLR.
+    correcta: false
+  - texto: Es un fichero que contiene el código en IL más otro contenido necesario para el CLR
+    correcta: true
+  - texto: Son <b>siempre</b> ejecutables.
+    correcta: false
+- enunciado: Busca en Internet y deduce que queremos decir con <b><em>'Ingeniería Inversa'</em></b> del IL
+  respuestas:
+  - texto: Crackear un programa que precisa de número de licencia para funcionar.
+    correcta: false
+  - texto: Utilizar algún tipo de Ramsonware para cifrar el IL.
+    correcta: false
+  - texto: Deducir el código de alto nivel o cómo se hizo un prográma a partir de su IL.
+    correcta: true
+  - texto: Ninguna de las respuestas anteriores es cierta.
+    correcta: false
+- enunciado: ¿Qué diferencia hay entre <b>.NET Framework</b> y el <b>.NET</b>?
+  respuestas:
+  - texto: El <b>.NET</b> está pensado para desarrollos basados en Microservicios en la nube, CI/CD y Contenedores
+    correcta: true
+  - texto: El <b>.NET Framework</b> es más moderno.
+    correcta: false
+  - texto: El <b>.NET</b> es multiplataforma.
+    correcta: true
+  - texto: El <b>.NET</b> permite usar versiones superiores del lenguaje C#.
+    correcta: true
+- enunciado: ¿Cual de las siguiente <b>es una versión LTS</b> de .NET?
+  respuestas:
+  - texto: .NET 9
+    correcta: false
+  - texto: .NET 8
+    correcta: true
+  - texto: .NET 6
+    correcta: true
+  - texto: .NET 7
+    correcta: false
+- enunciado: Indica cual de las siguientes afirmaciones es <b>cierta</b>.
+  respuestas:
+  - texto: El lenguaje C# no está estandarizado.
+    correcta: false
+  - texto: C# 12 no se podrá usar hasta la versión .NET 8
+    correcta: true
+  - texto: .NET 8 es de código abierto
+    correcta: true
+  - texto: .NET solo permite desarrollos en un único lenguaje de programación que es C#
+    correcta: false
+- enunciado: ¿Qué es el JIT?
+  respuestas:
+  - texto: Se encarga del proceso de compilación a IL.
+    correcta: false
+  - texto: Se encarga de traducir el IL al código nativo de la máquina.
+    correcta: true
+  - texto: Son unas librerías de código que vienen por defecto en la propia plataforma .NET.
+    correcta: false
+  - texto: Se encarga de leer los metadatos de un ensamblado.
+    correcta: false
+- enunciado: Indica cual de las siguientes afirmaciones es <b>cierta</b>.
+  respuestas:
+  - texto: El <b>CLS</b> contiene son los <b>tipos comunes</b> a todos los lenguajes que se pueden usar en la plataforma y así asegurar interoprabilidad entre ellos.
+    correcta: false
+  - texto: El <b>CTS</b> contiene son los <b>tipos comunes</b> a todos los lenguajes que se pueden usar en la plataforma y así asegurar interoprabilidad entre ellos.
+    correcta: true
+  - texto: Las BCL son unas librerías.
+    correcta: true
+  - texto: El espacio de nombres <b><code>System.Text</code></b> define los tipos que me permitirán realizar la entrada y salida por consola.
+    correcta: false

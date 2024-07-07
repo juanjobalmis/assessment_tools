@@ -1,0 +1,129 @@
+preguntas:
+- enunciado: ¿Cual es el comando para crear un <b>proyecto de consola</b>?
+  respuestas:
+  - texto: <b><code>dotnet new console -n [nombre_del_proyecto]</code></b>
+    correcta: true
+  - texto: <b><code>dotnet new sln -n [nombre_del_proyecto]</code></b>
+    correcta: false
+  - texto: <b><code>dotnet console new -n [nombre_del_proyecto]</code></b>
+    correcta: false
+  - texto: No se pueden crear proyectos de consola.
+    correcta: false
+- enunciado: ¿Que diferencia hay entre <b>Visual Studio Community Edition</b> y el <b>Visual Studio Code</b>?
+  respuestas:
+  - texto: Ninguna.
+    correcta: false
+  - texto: Visual Studio Code es un <b>IDE</b> y el otro es un simple editor.
+    correcta: false
+  - texto: Visual Studio Community Edition se encuentra disponible en más plataformas que el otro.
+    correcta: false
+  - texto: Visual Studio Code es OpenSource.
+    correcta: true
+- enunciado: Si instalamos la extensión en VSCode <em><b>Visual Studio Keymap</b></em> qué combinación de teclas me <b>formateará el código</b>.
+  respuestas:
+  - texto: Ctrl+K, Ctrl+D
+    correcta: true
+  - texto: Ctrl+K, Ctrl+C
+    correcta: false
+  - texto: Ctrl+K, Ctrl+U
+    correcta: false
+  - texto: Ctrl+K, Ctrl+I
+    correcta: false
+- enunciado: Si instalamos la extensión en VSCode <em><b>Visual Studio Keymap</b></em> qué combinación de teclas me ofrecerá <b>refactorización contextual</b>.
+  respuestas:
+  - texto: Ctrl+.
+    correcta: true
+  - texto: Ctrl+Space
+    correcta: false
+  - texto: Ctrl+shift+Space
+    correcta: false
+  - texto: Ctrl+shift+.
+    correcta: false
+- enunciado: Si instalamos la extensión en VSCode <em><b>Visual Studio Keymap</b></em> qué combinación de teclas me permite <b>comentar y descomentar el código seleccionado</b>.
+  respuestas:
+  - texto: Ctrl+C y Ctrl+V
+    correcta: false
+  - texto: Ctrl+K, Ctrl+C y Ctrl+K, Ctrl+U
+    correcta: true
+  - texto: Ctrl+X y Ctrl+D
+    correcta: false
+  - texto: F12 y Ctrl+F12
+    correcta: false
+- enunciado: La línea de código <b><code>using System;</code></b>
+  respuestas:
+  - texto: No sirve para nada.
+    correcta: false
+  - texto: Me permite usar la clase <b>Console</b> sin necesidad de usar el NCC
+    correcta: true
+  - texto: Solo si pongo esta línea de código al principio podré usar la clase <b>Console</b>
+    correcta: false
+  - texto: Me permite definir un <b>alias</b> para la clase System.
+    correcta: false
+- enunciado: La instrucción <b><code>Console.WriteLine($"PI = {Math.PI:F2}");</code></b> mostrará por consola.
+  respuestas:
+  - texto: <code>3,141516</code>
+    correcta: false
+  - texto: <code>3.14</code>
+    correcta: true
+  - texto: <code>3,14</code>
+    correcta: false
+  - texto: <code>3'1415</code>
+    correcta: false
+  - texto: ninguna de las respuestas anteriores 
+    correcta: true
+- enunciado: La instrucción <b><code>Console.WriteLine($"{16:X2}");</code></b> mostrará por consola.
+  respuestas:
+  - texto: <code>16</code>
+    correcta: false
+  - texto: <code>0016</code>
+    correcta: false
+  - texto: <code>10</code>
+    correcta: true
+  - texto: <code>0010</code>
+    correcta: false
+- enunciado: ¿Cual de los siguientes sería un <b>identificador más correcto</b> según los apuntes?
+  respuestas:
+  - texto: <code>longitudValla</code>
+    correcta: false
+  - texto: <code>lonValla</code>
+    correcta: false
+  - texto: <code>LongitudValla</code>
+    correcta: false
+  - texto: <code>longitudValla_cm</code>
+    correcta: true
+  - texto: <code>longitud_Valla_mm</code>
+    correcta: false
+- enunciado: Identifica cual de los siguientes <b>alias</b> de tipos básicos <b>no</b> es de C#
+  respuestas:
+  - texto: integer
+    correcta: true
+  - texto: int
+    correcta: false
+  - texto: boolean
+    correcta: true
+  - texto: bool
+    correcta: false
+  - texto: recordset
+    correcta: true
+  - texto: sbyte
+    correcta: false
+- enunciado: ¿Cual es el caracter de escape para que se imprima una nueva línea o un salto de línea en la consola?
+  respuestas:
+  - texto: <code>\r</code>
+    correcta: false
+  - texto: <code>\n</code>
+    correcta: true
+  - texto: <code>\b</code>
+    correcta: false
+  - texto: <code>\l</code>
+    correcta: false
+- enunciado: Indica cual de los siguientes declaraciones de variables es un <b>tipo referencia</b>
+  respuestas:
+  - texto: <code>int a;</code>
+    correcta: false
+  - texto: <code>string s;</code>
+    correcta: true
+  - texto: <code>long l;</code>
+    correcta: false
+  - texto: <code>boolean b;</code>
+    correcta: false

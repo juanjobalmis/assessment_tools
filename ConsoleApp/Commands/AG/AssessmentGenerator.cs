@@ -46,16 +46,32 @@ namespace AssessmentTools.Commands
             switch (options.AssessmentPlatform.TargetPlatForm)
             {
                 case AssessmentPlatform.Target.Moodlexml:
-                    AssessmentGeneratorToMoodleXml.Generate(options.AssignmentName, rubricFiles, studentsData, options.Verbose);
+                    AssessmentGeneratorToMoodleXml.Generate(
+                        options.AssignmentName,
+                        rubricFiles,
+                        studentsData,
+                        options.Verbose);
                     break;
                 case AssessmentPlatform.Target.Moodlecsv:
-                    AssessmentGeneratorToMoodleCsv.Generate(options.AssignmentName, rubricFiles, studentsData, options.Verbose);
+                    AssessmentGeneratorToMoodleCsv.Generate(
+                        options.AssignmentName,
+                        rubricFiles,
+                        studentsData,
+                        options.Verbose);
                     break;
                 case AssessmentPlatform.Target.Email:
-                    AssessmentGeneratorToEMail.Generate(options.AssignmentName, rubricFiles, studentsData, options.Verbose);
+                    AssessmentGeneratorToEMail.Generate(
+                        options.AssignmentName,
+                        rubricFiles,
+                        studentsData,
+                        options.Verbose);
                     break;
                 case AssessmentPlatform.Target.Xlsx:
-                    AssessmentGeneratorToBook.GenerateSummary(options.AssignmentName, rubricFiles, studentsData, options.Verbose);
+                    AssessmentGeneratorToBook.GenerateSummary(
+                        options.AssignmentName,
+                        rubricFiles,
+                        studentsData,
+                        options.Verbose);
                     break;
                 default:
                     throw new ArgumentException($"The target platform '{options.AssessmentPlatform.TargetPlatForm}' is not still available.");

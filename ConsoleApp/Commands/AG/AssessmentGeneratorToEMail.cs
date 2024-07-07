@@ -16,17 +16,11 @@ namespace AssessmentTools.Commands.AG
         {
             get
             {
-                const string CREDENTIALS_FILE = "smtp.credentials";
+                const string CREDENTIALS_FILE = "smtp.credentials.json";
                 return Path.Combine(PathE.ExecutableDirectory(), CREDENTIALS_FILE);
             }
         }
-        private static SmtpServerCredentials Credentials
-        {
-            get
-            {
-                return SmtpServerCredentials.Create(CredentialsPath);
-            }
-        }
+        private static SmtpServerCredentials Credentials => SmtpServerCredentials.SimpleFactory(CredentialsPath);
 
         private static List<Book> BooksWithSummaryPerStudent(GroupAssessmentData data)
         {
@@ -64,66 +58,20 @@ namespace AssessmentTools.Commands.AG
             List<Student> studentsData,
             bool verbose)
         {
-            using (MailSender mailSender = new MailSender(Credentials))
-            {
-                foreach (var rubic in rubricFiles)
-                {
-                    string studentName = "UNKNOWN";
-                    try
-                    {
-                        using (Book b = new Book(rubic, true))
-                        {
-                            studentName = Path.GetFileNameWithoutExtension(b.FileName);
-                            var student = studentsData.Find(s => s.Name.CompareTo(studentName) == 0);
-                            if (verbose)
-                                Console.Write($"Sending {assignmentName} assessment for {student.Name} to {student.Mail}...");
-                            mailSender.Send(student.Mail, assignmentName, SheetToHtml.Convert(b.MainSheet));
-                            if (verbose)
-                                Console.WriteLine("OK");
-                        }
-                    }
-                    catch (Exception e)
-                    {
-                        var message = new StringBuilder($"\nImpossible to send assessent for {studentName} ...\n");
-                        while (e != null)
-                        {
-                            message.Append(e.Message.IndexOf("Authentication Required") >= 0
-                                ? $"\tYour credentials are not valid. Please check them out:\n\t{Credentials}\n\tDelete {CredentialsPath} to renew them.\n"
-                                : $"\t{e.Message}\n");
-                            Console.WriteLine($"{message}");
-                            e = e.InnerException;
-                        } 
-                        Console.WriteLine(message);
-                    }
-                }
-            }
-        }
-
-        public static void GenerateSummary(
-            string assignmentName,
-            List<string> rubricFiles,
-            List<Student> studentsData,
-            bool verbose)
-        {
-            using (MailSender mailSender = new MailSender(Credentials))
+            using MailSender mailSender = new(Credentials);
+            foreach (var rubic in rubricFiles)
             {
                 string studentName = "UNKNOWN";
                 try
                 {
-                    GroupAssessmentData data = AssessGeneratorCommon.Collect(assignmentName, rubricFiles, studentsData, verbose);
-                    List<Book> books = BooksWithSummaryPerStudent(data);
-                    foreach (Book b in books)
-                    {
-                        studentName = Path.GetFileNameWithoutExtension(b.FileName);
-                        var student = studentsData.Find(s => s.Name.CompareTo(studentName) == 0);
-                        if (verbose)
-                            Console.Write($"Sending {assignmentName} assessment summary for {student.Name} to {student.Mail}...");
-                        mailSender.Send(student.Mail, assignmentName, SheetToHtml.Convert(b.MainSheet));
-                        b.Dispose();
-                        if (verbose)
-                            Console.WriteLine("OK");
-                    }
-                    books.Clear();
+                    using Book b = new(rubic, true);
+                    studentName = Path.GetFileNameWithoutExtension(b.FileName);
+                    var student = studentsData.Find(s => s.Name.CompareTo(studentName) == 0);
+                    if (verbose)
+                        Console.Write($"Sending {assignmentName} assessment for {student.Name} to {student.Mail}...");
+                    mailSender.Send(student.Mail, assignmentName, SheetToHtml.Convert(b.MainSheet));
+                    if (verbose)
+                        Console.WriteLine("OK");
                 }
                 catch (Exception e)
                 {
@@ -138,6 +86,47 @@ namespace AssessmentTools.Commands.AG
                     }
                     Console.WriteLine(message);
                 }
+            }
+        }
+
+        public static void GenerateSummary(
+            string assignmentName,
+            List<string> rubricFiles,
+            List<Student> studentsData,
+            bool verbose)
+        {
+            using MailSender mailSender = new MailSender(Credentials);
+            string studentName = "UNKNOWN";
+            try
+            {
+                GroupAssessmentData data = AssessGeneratorCommon.Collect(assignmentName, rubricFiles, studentsData, verbose);
+                List<Book> books = BooksWithSummaryPerStudent(data);
+                foreach (Book b in books)
+                {
+                    studentName = Path.GetFileNameWithoutExtension(b.FileName);
+                    var student = studentsData.Find(s => s.Name.CompareTo(studentName) == 0);
+                    if (verbose)
+                        Console.Write($"Sending {assignmentName} assessment summary for {student.Name} to {student.Mail}...");
+                    mailSender.Send(student.Mail, assignmentName, SheetToHtml.Convert(b.MainSheet));
+                    b.Dispose();
+                    if (verbose)
+                        Console.WriteLine("OK");
+                }
+                books.Clear();
+            }
+            catch (Exception e)
+            {
+                var message = new StringBuilder($"\nImpossible to send assessent for {studentName} ...\n");
+                while (e != null)
+                {
+                    File.Delete(CredentialsPath);
+                    message.Append(e.Message.IndexOf("Authentication Required") >= 0
+                        ? $"\tYour credentials are not valid. Please check them out:\n\t{Credentials}\n"
+                        : $"\t{e.Message}\n");
+                    Console.WriteLine($"{message}");
+                    e = e.InnerException;
+                }
+                Console.WriteLine(message);
             }
         }
     }

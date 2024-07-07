@@ -4,11 +4,11 @@ using AssessmentTools.Commands;
 
 public class TestGenerateAsessments
 {
-    [Fact]
-    public void SetActivityDirectory()
+    public TestGenerateAsessments()
     {
         string currentDirectory = Directory.GetCurrentDirectory();
-        Directory.SetCurrentDirectory(Path.Combine(currentDirectory, "..", "..", "..", "Actividad1"));
+        if (!currentDirectory.EndsWith("assets"))
+            Directory.SetCurrentDirectory(Path.Combine(currentDirectory, "..", "..", "..", "assets"));
     }
     [Fact]
     public void GenerateMoodleCsvAssessment()

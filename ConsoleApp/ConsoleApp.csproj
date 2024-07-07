@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <AssemblyName>assesst</AssemblyName>
+    <AssemblyName>at</AssemblyName>
     <RootNamespace>AssessmentTools</RootNamespace>
   </PropertyGroup>
 
