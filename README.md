@@ -4,16 +4,16 @@
 * Tool to be used not only with **Moodle** but also with other similar assessment methods.
 
 * **How to use the program?**
-    1. Set the **PATH** environment variable to where **assesst.exe** and dependencies were located.
+    1. Set the **PATH** environment variable to where **atools.exe** and dependencies were located.
     2. Unzip received students assignments whether they are downloaded from Moodle. Otherwise, each assignment has to be in a folder with their name.
     3. Copy the rubric template file to the assignments folders.
     4. Open a command line terminal in the assignments folder.
     5. Options:
 
         ```txt
-        at Uses ...
+        atools Uses ...
 
-                at <command>
+                atools <command>
 
                 <command>
                         RG (RUBRIC_GENERATOR):
@@ -23,7 +23,7 @@
                         QG (QUIZ_GENERATOR):
                                 * To generate a quiz from YAML format.
 
-        Type for more information: at <command> --help
+        Type for more information: atools <command> --help
         ```
 
 ---
@@ -32,11 +32,11 @@
 
 ### RUBRIC_GENERATOR
 
-* at RUBRIC_GENERATOR Uses ...
+* atools RUBRIC_GENERATOR Uses ...
 
     ```txt
-    at RG --help
-    at RG <options>
+    atools RG --help
+    atools RG <options>
 
     <options>
             -v (--verbose):
@@ -68,17 +68,17 @@
                     Besides, use students name file implies normalization.
     ```
 
-* **Example:** `at RG -v -s studentsData.csv -r assessmentTemplate.xlsx`
+* **Example:** `atools RG -v -s studentsData.csv -r assessmentTemplate.xlsx`
 
 ---
 
 ### ASSESSMENT_GENERATOR
 
-* at ASSESSMENT_GENERATOR Uses ...
+* atools ASSESSMENT_GENERATOR Uses ...
 
     ```txt
-    at AG --help
-    at AG <options>
+    atools AG --help
+    atools AG <options>
 
     <options>
             -v (--verbose):
@@ -100,10 +100,10 @@
                         * If it is not specified the current folder name is taken.
             -p (--platform) <platform>:
                         Available platforms:
-                        1. moodlexml -> It generates a moodle grade format into moodle.xml file.
+                        1. moodlexml -> It generates a moodle grade formatools into moodle.xml file.
                                         To set the assignment Name and the student ID see Moodle doc at
                                         https://docs.moodle.org/38/en/Grade_import#XML_import
-                        2. moodlecsv -> It generates a CSV grade format into moodle.csv file.
+                        2. moodlecsv -> It generates a CSV grade formatools into moodle.csv file.
                                         We need to map Email with ID to identify a Student see
                                         https://docs.moodle.org/38/en/Grade_import#CSV_import
                         3. email -> It generates crypt credentials for GMail SMTP server whether there are not.
@@ -114,17 +114,17 @@
             called 'mark' to find out the assessment mark, grade or score in some targets.
     ```
 
-* **Example:** `at AG -v -s studentsData.csv -n exercise1 -p moodlecsv`
+* **Example:** `atools AG -v -s studentsData.csv -n exercise1 -p moodlecsv`
 
 ---
 
 ### QUIZ_GENERATOR
 
-* at QUIZ_GENERATOR Uses ...
+* atools QUIZ_GENERATOR Uses ...
 
     ```txt
-     at QG --help
-    at QG <options>
+     atools QG --help
+    atools QG <options>
 
         <options>
                 -v (--verbose):
@@ -152,4 +152,4 @@
                            ...
     ```
 
-* **Example:** `at QG -v -o quizzes`
+* **Example:** `atools QG -v -o quizzes`

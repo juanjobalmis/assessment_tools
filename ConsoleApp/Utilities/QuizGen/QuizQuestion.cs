@@ -42,7 +42,7 @@ namespace QuizGen
                 new XElement("questiontext",
                     new XAttribute("format", "html"),
                     new XElement("text",
-                        new XCData($"<h4>{Enunciado}</h4>")
+                        new XCData($"<p>{Enunciado}</p>")
                     )
                 ),
                 new XElement("defaultgrade", grade.ToString(CultureInfo.InvariantCulture)),
@@ -102,11 +102,16 @@ namespace QuizGen
                 throw new System.InvalidOperationException("This method is only for description questions.");
 
             var quizInstructions = @"
-            <p>Cada pregunta puede tener <b>una o más</b> de una respuestas correctas</p>.
-            <p>La puntuación de cada pregunta se divide entre el número de respuestas correctas</p>.
-            <p>Cada respuesta incorrecta resta también en proporción al número de posibilidades incorrectas</p>.
-            <p>Tiene dos intentos para realizar la prueba y la calificación final será la media de ambos</p>.
-            <p>Una vez finalice el plazo para realizar la prueba, podrá ver aquellos casos donde ha fallado y no podrá volver a realizarla</p>.
+            <p>Instrucciones:</p>
+            <p>
+            <ol>
+            <li>Cada pregunta puede tener <b>una o más</b> de una respuestas correctas, lee bien el enunciado puedes darte pistas.</li>
+            <li>La puntuación de cada pregunta se divide entre el número de respuestas correctas.</li>
+            <li>Cada respuesta incorrecta resta también en proporción al número de posibilidades incorrectas.</li>
+            <li>Tienes dos intentos para realizar la prueba y la calificación final será la más alta.</li>
+            <li>Una vez finalice el plazo para realizar la prueba, podrá ver aquellos casos donde ha fallado y <b>no</b> podrá volver a realizarla.</li>
+            </ol>
+            </p>
             ";
 
             var xml = new XElement("question",
