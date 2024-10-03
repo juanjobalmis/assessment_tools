@@ -1,0 +1,328 @@
+﻿<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/B2/tema3_2</text>
+    </category>
+  </question>
+  <question type="description">
+    <name>
+      <text>Instrucciones de la prueba</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+            <p>Instrucciones:</p>
+            <p>
+            <ol>
+            <li>Cada pregunta puede tener <b>una o más</b> de una respuestas correctas, lee bien el enunciado puedes darte pistas.</li>
+            <li>La puntuación de cada pregunta se divide entre el número de respuestas correctas.</li>
+            <li>Cada respuesta incorrecta resta también en proporción al número de posibilidades incorrectas.</li>
+            <li>Tienes dos intentos para realizar la prueba y la calificación final será la más alta.</li>
+            <li>Una vez finalice el plazo para realizar la prueba, podrá ver aquellos casos donde ha fallado y <b>no</b> podrá volver a realizarla.</li>
+            </ol>
+            </p>
+            ]]></text>
+    </questiontext>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Al conjunto de instrucciones que se repiten dentro de un bucle se les denomina...</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>loop.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>condición del bucle.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>iteración del bucle.</p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>cuerpo del bucle.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Cuando los valores de la expresión o condición de salida del bucle nunca se modifican se producirá un bucle...</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>anidado.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>acumulador.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>inmutable.</p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>infinito.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>En un <b>contador</b> incrementamos una variable normalmente de tipo...</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>real en un valor fijo.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>cadena en un valor fijo.</p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>entero en un valor fijo.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>entero en un valor variable.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué es un <b><em>'flag'</em></b>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>No existe tal concepto en algoritmia.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Genera un <b>evento</b> al producirse.</p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Es un esquema algoritmico que me permitirá saber si se ha producido cierta condición durante la ejecución de un bucle.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Es un cadena que pasa de "0" a "1" al producirse un error.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Los bucles <code>do-while</code></p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>El cuerpo del bucle se ejecuta al menos una vez.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Son idénticos a los while.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Son idénticos a los while con un contador incorporado.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Solo finalizan si usamos un <em>'flag'</em> como condición de salida.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>La clausula <code>continue</code></p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-50.000" format="html">
+      <text><![CDATA[<p>Debe ir siempre acompañada de un <code>break</code>.</p>]]></text>
+    </answer>
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>Deberemos evitarla.</p>]]></text>
+    </answer>
+    <answer fraction="-50.000" format="html">
+      <text><![CDATA[<p>Finaliza la ejecución de un bucle.</p>]]></text>
+    </answer>
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>Detiene la ejecución del cuerpo del bucle y fuerza la evaluación de la condición de salida.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Los bucles anidados se dan cuando tenemos un...</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>bucle dentro de otro bucle.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>condicional múltiple dentro de un bucle.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><code>break</code> dentro de un bucle.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>bucle infinito.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Dado el siguiente código... <code>int i = 0; for(; i<100; ++i);{ Console.WriteLine(i+1); }</code></p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p>Mostrará los valores de 0 al 99</p>]]></text>
+    </answer>
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p>Mostrará los valores de 1 al 100</p>]]></text>
+    </answer>
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p>Dará error de compilación</p>]]></text>
+    </answer>
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p>Mostrará el valor 1</p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Mostrará el valor 101</p>]]></text>
+    </answer>
+  </question>
+</quiz>

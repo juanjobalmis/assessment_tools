@@ -4,7 +4,7 @@ using System.IO;
 
 namespace AssessmentTools.Commands
 {
-    class RubricGeneratorOptions : CommandOptions
+    public class RubricGeneratorOptions : CommandOptions
     {
         private enum ForcedOption : ushort { rubricTemplateFile = 0x0001 }
         protected override List<string> ForcedOptionsNotIntroduced => ForcedOptionsNotInMask(typeof(ForcedOption));

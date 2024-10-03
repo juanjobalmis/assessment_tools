@@ -9,7 +9,7 @@ using AssessmentTools.Data;
 
 namespace AssessmentTools.Commands
 {
-    static class RubricGenerator
+    public static class RubricGenerator
     {
         private static string NormalizeFolderName(string name)
         {
@@ -53,7 +53,7 @@ namespace AssessmentTools.Commands
 
         private static List<string> NormalizeFolderNames(List<string> folders, bool verbose = false)
         {
-            List<string> renamedFolders = new List<string>();
+            List<string> renamedFolders = new();
             folders.ForEach(f =>
             {
                 string target = Path.Combine(Path.GetDirectoryName(f), NormalizeFolderName(Path.GetFileName(f)));
@@ -138,7 +138,9 @@ namespace AssessmentTools.Commands
             return option == 'Y';
         }
 
-        private static List<string> RemoveFoldersNotInValidFolders(List<string> validForlders)
+        private static List<string> RemoveFoldersNotInValidFolders(
+            List<string> validForlders, 
+            bool testing = false)
         {
             List<string> folders = new List<string>(Directory.GetDirectories(Directory.GetCurrentDirectory()));
             int i = 0;
@@ -146,7 +148,12 @@ namespace AssessmentTools.Commands
             {
                 if (validForlders.FindIndex(ftk => folders[i].ToUpper().IndexOf(ftk.ToUpper()) >= 0) < 0)
                 {
-                    if (AskForValidation($"{folders[i]} not found in the names list.\nDou you want to remove it?"))
+                    string message = $"{folders[i]} not found in the names list.";
+                    
+                    if (testing)
+                        throw new GeneratorException(message);
+
+                    if (AskForValidation($"{testing}\nDou you want to remove it?"))
                     {
                         Console.WriteLine($"Removing {folders[i]} ...");
                         Directory.Delete(folders[i], true);
@@ -159,10 +166,10 @@ namespace AssessmentTools.Commands
             return folders;
         }
 
-        private static bool IsFolderInStudentNameOrAliasSimplistic(string folder, List<string> aliasesForAStudent)
+        private static bool IsFolderInStudentNameOrAliasSubstring(string folder, List<string> aliasesForAStudent)
         {
             string name = Path.GetFileName(folder).ToUpper();
-            return aliasesForAStudent.FindIndex(alias => alias != "" && name.IndexOf(RemoveAccentuationSymbols(alias.ToUpper())) >= 0) >= 0;
+            return aliasesForAStudent.FindIndex(alias => alias != "" && name.IndexOf(alias) >= 0) >= 0;
         }
 
         private static bool IsFolderInStudentNameOrAliasHeuristic(string folder, List<string> aliasesForAStudent)
@@ -171,17 +178,25 @@ namespace AssessmentTools.Commands
             List<string> wordsInFolder = new List<string>(Path.GetFileName(folder).Split(" ,;_-.".ToCharArray(), StringSplitOptions.RemoveEmptyEntries));
             match = wordsInFolder.Count < 1;
             if (!match)
-                match = wordsInFolder.FindIndex(w => IsFolderInStudentNameOrAliasSimplistic(w, aliasesForAStudent)) >= 0;
+                match = wordsInFolder.FindIndex(w => IsFolderInStudentNameOrAliasSubstring(w, aliasesForAStudent)) >= 0;
             return match;
         }
 
-        private static string AskUserForMultipleMatch(List<string> proposedNames, string deliveredFolder)
+        private static string AskUserForMultipleMatch(
+                                List<string> proposedNames,
+                                string deliveredFolder,
+                                bool testing = false)
         {
             int option;
             bool correctOption;
             do
             {
-                Console.WriteLine($"There is multiple choices for delivered folder {Path.GetFileName(deliveredFolder)}");
+                string message = $"There is multiple choices for delivered folder {Path.GetFileName(deliveredFolder)}";
+
+                if (testing)
+                    throw new GeneratorException(message);
+
+                Console.WriteLine(message);                
                 Console.Write("Select the number with the correct name: ");
                 Console.WriteLine();
                 option = 1;
@@ -191,6 +206,8 @@ namespace AssessmentTools.Commands
                     correctOption = option > 0 && option <= proposedNames.Count;
                 if (!correctOption)
                     Console.WriteLine($"Invalid option. Type a number between {1} and {proposedNames.Count}");
+
+
             } while (!correctOption);
             return proposedNames[option - 1];
         }
@@ -214,16 +231,24 @@ namespace AssessmentTools.Commands
         private static void AddProposedNamesToAsociation(
                                 Dictionary<string, string> namedToDeliveredFolderAsociation,
                                 List<string> proposedNames,
-                                string deliveredFolder)
+                                string deliveredFolder,
+                                bool testing = false)
         {
-            string name = proposedNames.Count == 1 ? proposedNames[0] : AskUserForMultipleMatch(proposedNames, deliveredFolder);
+            string name = proposedNames.Count == 1 
+                        ? proposedNames[0] 
+                        : AskUserForMultipleMatch(proposedNames, deliveredFolder, testing);
             name = name.ToUpper();
             string namedFolder = Path.Combine(Path.GetDirectoryName(deliveredFolder), name);
 
             if (namedToDeliveredFolderAsociation.ContainsKey(namedFolder))
             {
-                Console.WriteLine($"The student name entry {name} aosciated to");
-                Console.WriteLine($"{Path.GetFileName(namedToDeliveredFolderAsociation[namedFolder])} already exists.");
+                string message  = $"The student name entry {name} aosciated to\n";
+                message += $"{Path.GetFileName(namedToDeliveredFolderAsociation[namedFolder])} already exists.";
+
+                if (testing)
+                    throw new GeneratorException(message);
+
+                Console.WriteLine(message);
                 string question = $"Do you want to replace the association with {Path.GetFileName(deliveredFolder)}?";
                 if (AskForValidation(question))
                     namedToDeliveredFolderAsociation[namedFolder] = deliveredFolder;
@@ -234,23 +259,36 @@ namespace AssessmentTools.Commands
 
         private static Dictionary<string, string> NamedToDeliveredFolderAsociation(
                                                         Dictionary<string, List<string>> studentNamesWithAlias,
-                                                        List<string> deliveredFolders)
+                                                        List<string> deliveredFolders,
+                                                        bool testing = false)
         {
             Dictionary<string, string> namedToDeliveredFolderAsociation = new Dictionary<string, string>();
             foreach (var deliveredFolder in deliveredFolders)
             {
                 string deliveredFolderWithOutAccents = Path.Combine(
-                                                                Path.GetDirectoryName(deliveredFolder), 
+                                                                Path.GetDirectoryName(deliveredFolder),
                                                                 RemoveAccentuationSymbols(Path.GetFileName(deliveredFolder)));
-                var proposedNames = studentNamesWithAlias.Where(nameWithAlias => IsFolderInStudentNameOrAliasSimplistic(deliveredFolderWithOutAccents, nameWithAlias.Value))
+                var proposedNames = studentNamesWithAlias.Where(nameWithAlias => IsFolderInStudentNameOrAliasSubstring(deliveredFolderWithOutAccents, nameWithAlias.Value))
                                                          .Select(nameWithAlias => nameWithAlias.Key).ToList();
                 if (proposedNames.Count == 0)
                     proposedNames = studentNamesWithAlias.Where(nameWithAlias => IsFolderInStudentNameOrAliasHeuristic(deliveredFolderWithOutAccents, nameWithAlias.Value))
                                                          .Select(nameWithAlias => nameWithAlias.Key).ToList();
                 if (proposedNames.Count > 0)
-                    AddProposedNamesToAsociation(namedToDeliveredFolderAsociation, proposedNames, deliveredFolder);
+                    AddProposedNamesToAsociation(namedToDeliveredFolderAsociation, proposedNames, deliveredFolder, testing);
             }
             return namedToDeliveredFolderAsociation;
+        }
+
+        private static Dictionary<string, List<string>> Normalize(this Dictionary<string, List<string>> studentNamesWithAlias)
+        {
+            Dictionary<string, List<string>> normalized = new();
+            foreach (var student in studentNamesWithAlias)
+            {
+                string normalizedName = RemoveAccentuationSymbols(student.Key.ToUpper());
+                List<string> normalizedAliases = student.Value.Select(alias => RemoveAccentuationSymbols(alias.ToUpper())).ToList();
+                normalized.Add(normalizedName, normalizedAliases);
+            }
+            return normalized;
         }
 
         public static void Generate(RubricGeneratorOptions options)
@@ -265,10 +303,11 @@ namespace AssessmentTools.Commands
             if (options.IsThereStudentNamesFile)
             {
                 Dictionary<string, string> namedToDeliveredFolderAsociation = NamedToDeliveredFolderAsociation(
-                                                                                        StudentsData.NamesWithAlias(options.StudentNamesFile),
-                                                                                        deliveredFolders);
+                                                                                        StudentsData.NamesWithAlias(options.StudentNamesFile).Normalize(),
+                                                                                        deliveredFolders,
+                                                                                        options.Test);
                 RenameFoldersWithStudentNamesAsociation(namedToDeliveredFolderAsociation, options.Verbose);
-                namedFolders = RemoveFoldersNotInValidFolders(namedToDeliveredFolderAsociation.Keys.ToList());
+                namedFolders = RemoveFoldersNotInValidFolders(namedToDeliveredFolderAsociation.Keys.ToList(), options.Test);
             }
             else
                 namedFolders = NormalizeFolderNames(deliveredFolders, options.Verbose);

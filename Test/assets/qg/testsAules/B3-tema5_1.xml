@@ -1,0 +1,288 @@
+﻿<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/B3/tema5_1</text>
+    </category>
+  </question>
+  <question type="description">
+    <name>
+      <text>Instrucciones de la prueba</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+            <p>Instrucciones:</p>
+            <p>
+            <ol>
+            <li>Cada pregunta puede tener <b>una o más</b> de una respuestas correctas, lee bien el enunciado puedes darte pistas.</li>
+            <li>La puntuación de cada pregunta se divide entre el número de respuestas correctas.</li>
+            <li>Cada respuesta incorrecta resta también en proporción al número de posibilidades incorrectas.</li>
+            <li>Tienes dos intentos para realizar la prueba y la calificación final será la más alta.</li>
+            <li>Una vez finalice el plazo para realizar la prueba, podrá ver aquellos casos donde ha fallado y <b>no</b> podrá volver a realizarla.</li>
+            </ol>
+            </p>
+            ]]></text>
+    </questiontext>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>La programación orientada a objetos (POO)...</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.1111111111111112</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="33.333" format="html">
+      <text><![CDATA[<p>aborda los problemas a través de unidades lógicas denominadas objetos.</p>]]></text>
+    </answer>
+    <answer fraction="-100.000" format="html">
+      <text><![CDATA[<p>generará <b>baja</b> reusabilidad del código.</p>]]></text>
+    </answer>
+    <answer fraction="33.333" format="html">
+      <text><![CDATA[<p>permite representar de forma abstracta los problemas.</p>]]></text>
+    </answer>
+    <answer fraction="33.333" format="html">
+      <text><![CDATA[<p>incluye estrategias de la programación imperativa y estructurada.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué es un Tipo Abstracto de Datos o TAD?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.1111111111111112</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-50.000" format="html">
+      <text><![CDATA[<p>Es concreción en código de un tipo en el lenguaje.</p>]]></text>
+    </answer>
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>Son entidades abstractas que intervienen en un problema.</p>]]></text>
+    </answer>
+    <answer fraction="-50.000" format="html">
+      <text><![CDATA[<p>Vienen predefinidos en el lenguaje C#.</p>]]></text>
+    </answer>
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>Es una definición abstracta, completa y no ambigua de una estructura de datos junto con el conjunto de operaciones que se pueden hacer sobre ellos.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Una <b>clase</b> en POO</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.1111111111111112</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>Implementa una concreción de una abstracción.</p>]]></text>
+    </answer>
+    <answer fraction="-50.000" format="html">
+      <text><![CDATA[<p>Es la creación de un determinado tipo de objeto en memoria.</p>]]></text>
+    </answer>
+    <answer fraction="-50.000" format="html">
+      <text><![CDATA[<p>Siempre establece relaciones con otras clases.</p>]]></text>
+    </answer>
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>Define objetos que van a tener la misma estructura y comportamiento.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Un <b>objeto</b> en POO</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.1111111111111112</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>Es la instancia en memoria de un elemento concreto de la clase.</p>]]></text>
+    </answer>
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>Se suelen crear con la palabra reservada <code>new</code>.</p>]]></text>
+    </answer>
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>Es <b>igual</b> a otro objeto si tiene el mismo estado.</p>]]></text>
+    </answer>
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>Tendrá una serie de operaciones que podrán cambiar o no su estado.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Los atributos de <b>instancia</b></p>]]></text>
+    </questiontext>
+    <defaultgrade>1.1111111111111112</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>Necesitaré de un objeto instanciado en memoria para acceder a ellos.</p>]]></text>
+    </answer>
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>Serán valores diferentes en memoria para cada objeto.</p>]]></text>
+    </answer>
+    <answer fraction="-50.000" format="html">
+      <text><![CDATA[<p>Son visibles desde cualquier método de la clase (ya sea de instancia o no).</p>]]></text>
+    </answer>
+    <answer fraction="-50.000" format="html">
+      <text><![CDATA[<p>Almacenan características comunes a todos los objetos de una clase.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>En C#</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.1111111111111112</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>Podemos usar el operador <code>new</code> para instanciar objetos.</p>]]></text>
+    </answer>
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>Cualquier tipo de dato instanciado en memoria es un objeto en el fondo.</p>]]></text>
+    </answer>
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>Usaremos el operador <code>.</code> para acceder a los atributos y las operaciones públicos que implementa un objeto.</p>]]></text>
+    </answer>
+    <answer fraction="25.000" format="html">
+      <text><![CDATA[<p>Los objetos definidos por nosotros suelen ser tipos <b>referencia</b>.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Los <b>atributos</b> de una clase</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.1111111111111112</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>También se conocen como campos o propiedades dependiendo del contexto.</p>]]></text>
+    </answer>
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>Me indicarán el estado de un objeto en memoria.</p>]]></text>
+    </answer>
+    <answer fraction="-50.000" format="html">
+      <text><![CDATA[<p>Son siempre constantes.</p>]]></text>
+    </answer>
+    <answer fraction="-50.000" format="html">
+      <text><![CDATA[<p>Solo podré acceder a ellos si he instanciado un objeto en memoria.</p>]]></text>
+    </answer>
+  </question>
+</quiz>

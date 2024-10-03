@@ -71,9 +71,15 @@ namespace AssessmentTools.Data
             return students;
         }
 
+        private static string ToMoodleFolderName(this string name)
+        {
+            string[] parts = name.Split(", ");
+            return $"{parts[1]} {parts[0]}";
+        }
+
         static public Dictionary<string, List<string>> NamesWithAlias(string studentNamesFile)
         {
-            Func<Student, List<string>> aliasGruping = s => new List<string> { s.Name, s.ID, s.NickName, s.GitHubLogin };
+            Func<Student, List<string>> aliasGruping = s => new List<string> { s.Name, s.Name.ToMoodleFolderName(), s.ID, s.NickName, s.GitHubLogin };
             return LoadFromCSV(studentNamesFile).ToDictionary(s => s.Name, aliasGruping);
         }
     }

@@ -1,0 +1,485 @@
+﻿<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/B1/tema2_1</text>
+    </category>
+  </question>
+  <question type="description">
+    <name>
+      <text>Instrucciones de la prueba</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+            <p>Instrucciones:</p>
+            <p>
+            <ol>
+            <li>Cada pregunta puede tener <b>una o más</b> de una respuestas correctas, lee bien el enunciado puedes darte pistas.</li>
+            <li>La puntuación de cada pregunta se divide entre el número de respuestas correctas.</li>
+            <li>Cada respuesta incorrecta resta también en proporción al número de posibilidades incorrectas.</li>
+            <li>Tienes dos intentos para realizar la prueba y la calificación final será la más alta.</li>
+            <li>Una vez finalice el plazo para realizar la prueba, podrá ver aquellos casos donde ha fallado y <b>no</b> podrá volver a realizarla.</li>
+            </ol>
+            </p>
+            ]]></text>
+    </questiontext>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cual es el comando para crear un <b>proyecto de consola</b>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>0.7142857142857143</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p><b><code>dotnet new console -n [nombre_del_proyecto]</code></b></p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><b><code>dotnet new sln -n [nombre_del_proyecto]</code></b></p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><b><code>dotnet console new -n [nombre_del_proyecto]</code></b></p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>No se pueden crear proyectos de consola.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Que diferencia hay entre <b>Visual Studio Community Edition</b> y el <b>Visual Studio Code</b>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>0.7142857142857143</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Ninguna.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Visual Studio Code es un <b>IDE</b> y el otro es un simple editor.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Visual Studio Community Edition se encuentra disponible en más plataformas que el otro.</p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Visual Studio Code es OpenSource.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Si instalamos la extensión en VSCode <em><b>Visual Studio Keymap</b></em> qué combinación de teclas me <b>formateará el código</b>.</p>]]></text>
+    </questiontext>
+    <defaultgrade>0.7142857142857143</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Ctrl+K, Ctrl+D</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Ctrl+K, Ctrl+C</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Ctrl+K, Ctrl+U</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Ctrl+K, Ctrl+I</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Si instalamos la extensión en VSCode <em><b>Visual Studio Keymap</b></em> qué combinación de teclas me ofrecerá <b>refactorización contextual</b>.</p>]]></text>
+    </questiontext>
+    <defaultgrade>0.7142857142857143</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Ctrl+.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Ctrl+Space</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Ctrl+shift+Space</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Ctrl+shift+.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Si instalamos la extensión en VSCode <em><b>Visual Studio Keymap</b></em> qué combinación de teclas me permite <b>comentar y descomentar el código seleccionado</b>.</p>]]></text>
+    </questiontext>
+    <defaultgrade>0.7142857142857143</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Ctrl+C y Ctrl+V</p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Ctrl+K, Ctrl+C y Ctrl+K, Ctrl+U</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Ctrl+X y Ctrl+D</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>F12 y Ctrl+F12</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>La línea de código <b><code>using System;</code></b></p>]]></text>
+    </questiontext>
+    <defaultgrade>0.7142857142857143</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>No sirve para nada.</p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Me permite usar la clase <b>Console</b> sin necesidad de usar el NCC</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Solo si pongo esta línea de código al principio podré usar la clase <b>Console</b></p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Me permite definir un <b>alias</b> para la clase System.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>La instrucción <b><code>Console.WriteLine($"PI = {Math.PI:F2}");</code></b> mostrará por consola.</p>]]></text>
+    </questiontext>
+    <defaultgrade>0.7142857142857143</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><code>3,141516</code></p>]]></text>
+    </answer>
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p><code>3.14</code></p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><code>3,14</code></p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><code>3'1415</code></p>]]></text>
+    </answer>
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>ninguna de las respuestas anteriores</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>La instrucción <b><code>Console.WriteLine($"{16:X2}");</code></b> mostrará por consola.</p>]]></text>
+    </questiontext>
+    <defaultgrade>0.7142857142857143</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><code>16</code></p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><code>0016</code></p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p><code>10</code></p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><code>0010</code></p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cual de los siguientes sería un <b>identificador más correcto</b> según los apuntes?</p>]]></text>
+    </questiontext>
+    <defaultgrade>0.7142857142857143</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p><code>longitudValla</code></p>]]></text>
+    </answer>
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p><code>lonValla</code></p>]]></text>
+    </answer>
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p><code>LongitudValla</code></p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p><code>longitudValla_cm</code></p>]]></text>
+    </answer>
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p><code>longitud_Valla_mm</code></p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Identifica cual de los siguientes <b>alias</b> de tipos básicos <b>no</b> es de C#</p>]]></text>
+    </questiontext>
+    <defaultgrade>0.7142857142857143</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="33.333" format="html">
+      <text><![CDATA[<p>integer</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>int</p>]]></text>
+    </answer>
+    <answer fraction="33.333" format="html">
+      <text><![CDATA[<p>boolean</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>bool</p>]]></text>
+    </answer>
+    <answer fraction="33.333" format="html">
+      <text><![CDATA[<p>recordset</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>sbyte</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cual es el caracter de escape para que se imprima una nueva línea o un salto de línea en la consola?</p>]]></text>
+    </questiontext>
+    <defaultgrade>0.7142857142857143</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><code>\r</code></p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p><code>\n</code></p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><code>\b</code></p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><code>\l</code></p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Indica cual de los siguientes declaraciones de variables es un <b>tipo referencia</b></p>]]></text>
+    </questiontext>
+    <defaultgrade>0.7142857142857143</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><code>int a;</code></p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p><code>string s;</code></p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><code>long l;</code></p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p><code>boolean b;</code></p>]]></text>
+    </answer>
+  </question>
+</quiz>

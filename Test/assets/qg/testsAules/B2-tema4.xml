@@ -1,0 +1,349 @@
+﻿<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/B2/tema4</text>
+    </category>
+  </question>
+  <question type="description">
+    <name>
+      <text>Instrucciones de la prueba</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+            <p>Instrucciones:</p>
+            <p>
+            <ol>
+            <li>Cada pregunta puede tener <b>una o más</b> de una respuestas correctas, lee bien el enunciado puedes darte pistas.</li>
+            <li>La puntuación de cada pregunta se divide entre el número de respuestas correctas.</li>
+            <li>Cada respuesta incorrecta resta también en proporción al número de posibilidades incorrectas.</li>
+            <li>Tienes dos intentos para realizar la prueba y la calificación final será la más alta.</li>
+            <li>Una vez finalice el plazo para realizar la prueba, podrá ver aquellos casos donde ha fallado y <b>no</b> podrá volver a realizarla.</li>
+            </ol>
+            </p>
+            ]]></text>
+    </questiontext>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cual de las siguientes afirmaciones <b>NO</b> es un problema de los <b>programas monolíticos</b>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Generan código <em>'spaghetti'</em>.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Tiempo elevado de corrección de errores.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Baja reusabilidad del código.</p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Fácil mantenimiento, código no duplicado o repetido.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuando se produce <b>alto acoplamiento</b> entre módulos?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Se produce cuando un módulo realiza más de una tarea.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Se produce cuando un módulo es muy usado por otros módulos.</p>]]></text>
+    </answer>
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>Se produce cuando un sub-modulo necesita conocer algo de la implementación de su llamador.</p>]]></text>
+    </answer>
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>Se produce cuando un módulo necesita conocer algo de la implementación de sus sub-módulos.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Cuando un módulo llama a un sub-módulo para realizar parte de su tarea.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cuando se produce <b>baja cohesión</b> entre módulos?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Se produce cuando un módulo realiza más de una tarea.</p>]]></text>
+    </answer>
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p>Se produce cuando un módulo es muy usado por otros módulos.</p>]]></text>
+    </answer>
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p>Se produce cuando un sub-modulo necesita conocer algo de la implementación de su llamador.</p>]]></text>
+    </answer>
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p>Se produce cuando un módulo necesita conocer algo de la implementación de sus sub-modulos.</p>]]></text>
+    </answer>
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p>Cuando un módulo llama a un sub-módulo para realizar parte de su tarea.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Para una correcta modularización buscaré.</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>Módulos con alta cohesion.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Módulos con alto acoplamiento.</p>]]></text>
+    </answer>
+    <answer fraction="50.000" format="html">
+      <text><![CDATA[<p>Módulos con bajo acoplamiento.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Módulos con baja cohesion.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>La definición del interfaz no sera importante.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué es la <b>signatura</b> de un método?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Su nombre o identificador.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Su identificador más los parámetros de entrada.</p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Su identificador más los parámetros de entrada y salida.</p>]]></text>
+    </answer>
+    <answer fraction="-33.333" format="html">
+      <text><![CDATA[<p>Ninguna de las respuestas anteriores es correcta.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cual de las siguientes <b>signaturas</b> de método sería las más correcta?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p><code>static void Invierte(string texto)</code></p>]]></text>
+    </answer>
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p><code>static void Invierte(ref string texto)</code></p>]]></text>
+    </answer>
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p><code>static void InvierteTexto(string texto, out string textoInvertido)</code></p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p><code>static string Invierte(string texto)</code></p>]]></text>
+    </answer>
+    <answer fraction="-25.000" format="html">
+      <text><![CDATA[<p><code>static string InvierteTexto(string t)</code></p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Cual de las siguientes <b>signaturas</b> de método sería las más correcta?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-20.000" format="html">
+      <text><![CDATA[<p><code>static void Extrae(double numero, ref double parteReal, ref double parteDecimal)</code></p>]]></text>
+    </answer>
+    <answer fraction="-20.000" format="html">
+      <text><![CDATA[<p><code>static double ExtraeParteRealYDecimal(double numero, out double parteDecimal)</code></p>]]></text>
+    </answer>
+    <answer fraction="-20.000" format="html">
+      <text><![CDATA[<p><code>static void extrae(double n, out double parteReal, out double parteDecimal)</code></p>]]></text>
+    </answer>
+    <answer fraction="-20.000" format="html">
+      <text><![CDATA[<p><code>static (double parteReal, double parteDecimal) Extrae(double n)</code></p>]]></text>
+    </answer>
+    <answer fraction="-20.000" format="html">
+      <text><![CDATA[<p><code>static (double parteReal, double parteDecimal) ExtraeParteRealYDecimal(double n)</code></p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Ninguna porque la <em>'Y'</em> me indica que es un método que hace más de una cosa y la mejor opción sería dividirlo en 2.</p>]]></text>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text></text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Puede devolver un método más de un parámetro?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect />
+    <answer fraction="-20.000" format="html">
+      <text><![CDATA[<p>No nunca.</p>]]></text>
+    </answer>
+    <answer fraction="-20.000" format="html">
+      <text><![CDATA[<p>Sí, siempre y cuando el método solo produzca diversos resultados tras hacer varias cosas.</p>]]></text>
+    </answer>
+    <answer fraction="-20.000" format="html">
+      <text><![CDATA[<p>Sí siempre, pero <b>solo</b> utilizado el modificador <code>out</code></p>]]></text>
+    </answer>
+    <answer fraction="100.000" format="html">
+      <text><![CDATA[<p>Sí, siempre y cuando el método solo haga una cosa.</p>]]></text>
+    </answer>
+    <answer fraction="-20.000" format="html">
+      <text><![CDATA[<p>Sí, siempre y cuando <b>uno esté subordinado a otro</b> y no retornemos void.</p>]]></text>
+    </answer>
+    <answer fraction="-20.000" format="html">
+      <text><![CDATA[<p>Ninguna de las respuestas anteriores es válida.</p>]]></text>
+    </answer>
+  </question>
+</quiz>
