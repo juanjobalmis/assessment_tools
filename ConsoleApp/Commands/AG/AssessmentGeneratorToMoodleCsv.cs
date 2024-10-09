@@ -32,8 +32,8 @@ namespace AssessmentTools.Commands.AG
                         if (verbose)
                             Console.WriteLine($"Adding assessment to {MOODLE_FILE} for {student.Name}...");
                         using CellRange cell = b.MainSheet["mark"];        
-                        var grade = double.Parse(cell.Text) * 10;
-                        csv.WriteLine($"\"{student.Name}\",{student.Mail},\"{assignmentName}\",{grade}");
+                        var grade = double.Parse(cell.Text);
+                        csv.WriteLine($"\"{student.Name}\",{student.Mail},\"{assignmentName}\",\"{grade}\"");
                     }
                 }
                 catch (Exception e)

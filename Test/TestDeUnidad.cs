@@ -5,72 +5,11 @@ using AssessmentTools.Commands;
 
 public class TestDeUnidad
 {
-
-    private static void SituateEnDirectorioBase(string directorioBaseTest)
-    {
-        string currentDirectory = Directory.GetCurrentDirectory();
-        if (!currentDirectory.EndsWith(directorioBaseTest))
-        {
-            if (Directory.Exists(Path.Combine(currentDirectory, "..", directorioBaseTest)))
-                Directory.SetCurrentDirectory(Path.Combine(currentDirectory, "..", directorioBaseTest));
-            else
-                Directory.SetCurrentDirectory(Path.Combine(currentDirectory, "..", "..", "..", "assets", directorioBaseTest));
-        }
-    }
-
-    private static void PreparaTestRubricas()
-    {
-        string directorioBaseTest = "rg";
-        SituateEnDirectorioBase(directorioBaseTest);
-
-        foreach (string entrada in Directory.GetFileSystemEntries(Directory.GetCurrentDirectory()))
-        {
-            bool esResultadoPrueba = !entrada.EndsWith("_rubric.xlsx") && !entrada.EndsWith("alumnosRG.csv");
-            if (esResultadoPrueba)
-            {
-                if (entrada.EndsWith(".xlsx"))
-                    File.Delete(entrada);
-                else
-                    Directory.Delete(entrada, true);
-            }
-        }
-
-        string[] alumnos = {
-            "NOMBRE1 APELLIDO18 APELLIDO19",
-            "NOMBRE2 APELLIDO28 APELLIDO29",
-            "NOMBRE3 APELLIDO38 APELLIDO39",
-            "NOMBRE4 APELLIDÓ48 APELLIDO49"
-        };
-
-        for (int i = 0; i < alumnos.Length; i++)
-        {
-            if (Directory.Exists(alumnos[i]))
-                Directory.Delete(alumnos[i], true);
-            Directory.CreateDirectory($"{alumnos[i]}_{new String(i.ToString()[0], 4)}");
-        }
-    }
-
-    private static void PreparaTestAsessment()
-    {
-        string directorioBaseTest = "ag";
-        SituateEnDirectorioBase(directorioBaseTest);
-    }
-
-    private static void PreparaTestQuiz()
-    {
-        string directorioBaseTest = "qg";
-        SituateEnDirectorioBase(directorioBaseTest);
-        
-        if (Directory.Exists("testsAules"))
-            Directory.Delete("testsAules", true);
-
-    }
-
     #region TESTS RUBRICAS
     [Fact]
     public void TestGenerateRubricas()
     {
-        PreparaTestRubricas();
+        Preparacion.PreparaTestRubricas();
         // atools rg -v -t -s alumnosRG.csv -r _rubric.xlsx
         RubricGeneratorOptions options = new(new string[]
         {
@@ -78,7 +17,7 @@ public class TestDeUnidad
             "-v",
             "-t", // Test
             "-s",
-            "alumnosRG.csv",
+            "alumnos.csv",
             "-r",
             "_rubric.xlsx"
         });
@@ -91,14 +30,14 @@ public class TestDeUnidad
     [Fact]
     public void GenerateMoodleCsvAssessment()
     {
-        PreparaTestAsessment();
+       Preparacion.PreparaTestAsessment();
         // atools ag -v -s alumnosAG.csv -p moodlecsv
         AssessmentGeneratorOptions options = new(new string[]
         {
             "ag",
             "-v",
             "-s",
-            "alumnosAG.csv",
+            "alumnos.csv",
             "-p",
             "moodlecsv"
         });
@@ -109,14 +48,14 @@ public class TestDeUnidad
     [Fact]
     public void GenerateMoodleXmlAssessment()
     {
-        PreparaTestAsessment();
+        Preparacion.PreparaTestAsessment();
         // atools ag -v -s alumnosAG.csv -p moodlexml
         AssessmentGeneratorOptions options = new(new string[]
         {
             "ag",
             "-v",
             "-s",
-            "alumnosAG.csv",
+            "alumnos.csv",
             "-p",
             "moodlexml"
         });
@@ -127,14 +66,14 @@ public class TestDeUnidad
     [Fact]
     public void GenerateMoodleExcelAssessment()
     {
-        PreparaTestAsessment();
+        Preparacion.PreparaTestAsessment();
         // atools ag -v -s alumnosAG.csv -p xlsx
         AssessmentGeneratorOptions options = new(new string[]
         {
             "ag",
             "-v",
             "-s",
-            "alumnosAG.csv",
+            "alumnos.csv",
             "-p",
             "xlsx"
         });
@@ -147,7 +86,7 @@ public class TestDeUnidad
     [Fact]
     public void GenerateQuizBank()
     {
-        PreparaTestQuiz();
+        Preparacion.PreparaTestQuiz();
         // atools qg -v -t -o testsAules
         QuizGeneratorOptions options = new(new string[]
         {

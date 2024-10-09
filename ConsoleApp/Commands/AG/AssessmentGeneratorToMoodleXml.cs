@@ -31,7 +31,7 @@ namespace AssessmentTools.Commands.AG
 
             xml.WriteElementString("assignment", assignmentName);
             xml.WriteElementString("student", student.ID);
-            xml.WriteElementString("score", $"{(grade != 0 ? grade : 1):#}");
+            xml.WriteElementString("score", $"{(grade != 0 ? grade : 1)}");
             xml.WriteStartElement("feedback");
             xml.WriteCData(feedback);
             xml.WriteEndElement();
@@ -61,7 +61,7 @@ namespace AssessmentTools.Commands.AG
                         if (verbose)
                             Console.WriteLine($"Adding assessment to {MOODLE_FILE} for {student.Name}...");
                         using CellRange cell = b.MainSheet["mark"];
-                        var grade = double.Parse(cell.Text) * 10;
+                        var grade = double.Parse(cell.Text);
                         AddStudentAssessmentToMoodleXML(
                             assignmentName, 
                             xml, 

@@ -2,11 +2,11 @@
   <result>
     <assignment>ag</assignment>
     <student>10000011</student>
-    <score>90</score>
+    <score>6,6</score>
     <feedback><![CDATA[<div style="overflow-x:auto;display:flex;justify-content:left;">
   <table style="border-collapse:collapse;empty-cells:hide;">
     <tr>
-      <td colspan="4" rowspan="3" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Ejercicios UD7 Parte 1 MongoDB Consola
+      <td colspan="4" rowspan="3" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Ejercicios UD2 XML
 AD – 2 DAM</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -33,113 +33,34 @@ AD – 2 DAM</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer101
-BD demograf&#237;a
-A&#241;ade comunidades
-Actualiza Navarra (Replace)
-Elimina Ceuta y Melilla</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD2Ejer1310
+Array personas.xml</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">33%</td>
       <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
       <td>&nbsp;</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">3,3</td>
     </tr>
     <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer102
-BD demografia
-Update de 5 comunidades con superficie y poblaci&#243;n</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD2Ejer1311
+Coches.xml</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">33%</td>
       <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
       <td>&nbsp;</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">3,3</td>
     </tr>
     <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer103
-BD demografia
-Update y $set de prov&#237;ncias en 4 comunidades.</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD2Ejer1312
+coches.csv a xml</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">34%</td>
+      <td>&nbsp;</td>
       <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer104
-BD company
-Inserci&#243;n de 3 trabajadores con nombre,
-apellidos, edad, tel&#233;fono m&#243;vil y n&#250;mero de hijos.</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer105
-BD libros
-Inserta 3 libros con ISBN,
-t&#237;tulo, autores (nombre de uno o varios), paginas, precio, a&#241;o de
-edici&#243;n, editorial e imagen de portada (url).</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer106
-BD gimnasio
-Monitores – Clases – Clientes
-Relaciones</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer107
-BD demografia
-Exportaci&#243;n a comunidades.json</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td>&nbsp;</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Incorrecto</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
     </tr>
     <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer108
-BD libreria
-Exportaci&#243;n a libros.json</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
       <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer109
-BD empresa
-Exportaci&#243;n a empleados.json</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer110
-BD shopping
-Importando libros.json en books de shopping</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(230,230,230,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Penalizaci&#243;n ℗</td>
       <td>&nbsp;</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
@@ -147,162 +68,7 @@ Importando libros.json en books de shopping</td>
     <tr>
       <td>&nbsp;</td>
       <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">100%</td>
-      <td colspan="2" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">9</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-  </table>
-</div>]]></feedback>
-  </result>
-  <result>
-    <assignment>ag</assignment>
-    <student>10000012</student>
-    <score>100</score>
-    <feedback><![CDATA[<div style="overflow-x:auto;display:flex;justify-content:left;">
-  <table style="border-collapse:collapse;empty-cells:hide;">
-    <tr>
-      <td colspan="4" rowspan="3" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Ejercicios UD7 Parte 1 MongoDB Consola
-AD – 2 DAM</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td rowspan="2" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(230,230,230,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Criterio</td>
-      <td rowspan="2" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(230,230,230,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Peso</td>
-      <td colspan="2" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(230,230,230,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Nota</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(230,230,230,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Apto</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(230,230,230,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">No Apto</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer101
-BD demograf&#237;a
-A&#241;ade comunidades
-Actualiza Navarra (Replace)
-Elimina Ceuta y Melilla</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer102
-BD demografia
-Update de 5 comunidades con superficie y poblaci&#243;n</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer103
-BD demografia
-Update y $set de prov&#237;ncias en 4 comunidades.</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer104
-BD company
-Inserci&#243;n de 3 trabajadores con nombre,
-apellidos, edad, tel&#233;fono m&#243;vil y n&#250;mero de hijos.</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer105
-BD libros
-Inserta 3 libros con ISBN,
-t&#237;tulo, autores (nombre de uno o varios), paginas, precio, a&#241;o de
-edici&#243;n, editorial e imagen de portada (url).</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer106
-BD gimnasio
-Monitores – Clases – Clientes
-Relaciones</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer107
-BD demografia
-Exportaci&#243;n a comunidades.json</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer108
-BD libreria
-Exportaci&#243;n a libros.json</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer109
-BD empresa
-Exportaci&#243;n a empleados.json</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">x</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer110
-BD shopping
-Importando libros.json en books de shopping</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(230,230,230,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Penalizaci&#243;n ℗</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">100%</td>
-      <td colspan="2" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10</td>
+      <td colspan="2" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">6,6</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
@@ -312,11 +78,11 @@ Importando libros.json en books de shopping</td>
   <result>
     <assignment>ag</assignment>
     <student>10000013</student>
-    <score>80</score>
+    <score>6,6</score>
     <feedback><![CDATA[<div style="overflow-x:auto;display:flex;justify-content:left;">
   <table style="border-collapse:collapse;empty-cells:hide;">
     <tr>
-      <td colspan="4" rowspan="3" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Ejercicios UD7 Parte 1 MongoDB Consola
+      <td colspan="4" rowspan="3" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Ejercicios UD2 XML
 AD – 2 DAM</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -343,113 +109,34 @@ AD – 2 DAM</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer101
-BD demograf&#237;a
-A&#241;ade comunidades
-Actualiza Navarra (Replace)
-Elimina Ceuta y Melilla</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD2Ejer1310
+Array personas.xml</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">33%</td>
       <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
       <td>&nbsp;</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">3,3</td>
     </tr>
     <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer102
-BD demografia
-Update de 5 comunidades con superficie y poblaci&#243;n</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD2Ejer1311
+Coches.xml</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">33%</td>
       <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
       <td>&nbsp;</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">3,3</td>
     </tr>
     <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer103
-BD demografia
-Update y $set de prov&#237;ncias en 4 comunidades.</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD2Ejer1312
+coches.csv a xml</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">34%</td>
+      <td>&nbsp;</td>
       <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer104
-BD company
-Inserci&#243;n de 3 trabajadores con nombre,
-apellidos, edad, tel&#233;fono m&#243;vil y n&#250;mero de hijos.</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Est&#225; comentado</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer105
-BD libros
-Inserta 3 libros con ISBN,
-t&#237;tulo, autores (nombre de uno o varios), paginas, precio, a&#241;o de
-edici&#243;n, editorial e imagen de portada (url).</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">No comentes las soluciones</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer106
-BD gimnasio
-Monitores – Clases – Clientes
-Relaciones</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td>&nbsp;</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Incorrecto</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
     </tr>
     <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer107
-BD demografia
-Exportaci&#243;n a comunidades.json</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
       <td>&nbsp;</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Incorrecto</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer108
-BD libreria
-Exportaci&#243;n a libros.json</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer109
-BD empresa
-Exportaci&#243;n a empleados.json</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer110
-BD shopping
-Importando libros.json en books de shopping</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(230,230,230,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Penalizaci&#243;n ℗</td>
       <td>&nbsp;</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
@@ -457,7 +144,7 @@ Importando libros.json en books de shopping</td>
     <tr>
       <td>&nbsp;</td>
       <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">100%</td>
-      <td colspan="2" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">8</td>
+      <td colspan="2" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">6,6</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
@@ -467,11 +154,11 @@ Importando libros.json en books de shopping</td>
   <result>
     <assignment>ag</assignment>
     <student>10000014</student>
-    <score>100</score>
+    <score>6,6</score>
     <feedback><![CDATA[<div style="overflow-x:auto;display:flex;justify-content:left;">
   <table style="border-collapse:collapse;empty-cells:hide;">
     <tr>
-      <td colspan="4" rowspan="3" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Ejercicios UD7 Parte 1 MongoDB Consola
+      <td colspan="4" rowspan="3" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Ejercicios UD2 XML
 AD – 2 DAM</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -498,114 +185,34 @@ AD – 2 DAM</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer101
-BD demograf&#237;a
-A&#241;ade comunidades
-Actualiza Navarra (Replace)
-Elimina Ceuta y Melilla</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD2Ejer1310
+Array personas.xml</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">33%</td>
       <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
       <td>&nbsp;</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">3,3</td>
     </tr>
     <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer102
-BD demografia
-Update de 5 comunidades con superficie y poblaci&#243;n</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD2Ejer1311
+Coches.xml</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">33%</td>
       <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
       <td>&nbsp;</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">3,3</td>
     </tr>
     <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer103
-BD demografia
-Update y $set de prov&#237;ncias en 4 comunidades.</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD2Ejer1312
+coches.csv a xml</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">34%</td>
+      <td>&nbsp;</td>
       <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
     </tr>
     <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer104
-BD company
-Inserci&#243;n de 3 trabajadores con nombre,
-apellidos, edad, tel&#233;fono m&#243;vil y n&#250;mero de hijos.</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">
-Cuida la indentaci&#243;n</td>
       <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer105
-BD libros
-Inserta 3 libros con ISBN,
-t&#237;tulo, autores (nombre de uno o varios), paginas, precio, a&#241;o de
-edici&#243;n, editorial e imagen de portada (url).</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer106
-BD gimnasio
-Monitores – Clases – Clientes
-Relaciones</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">M&#237;nimo</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer107
-BD demografia
-Exportaci&#243;n a comunidades.json</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer108
-BD libreria
-Exportaci&#243;n a libros.json</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer109
-BD empresa
-Exportaci&#243;n a empleados.json</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">x</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:bold;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD7Ejer110
-BD shopping
-Importando libros.json en books de shopping</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10%</td>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
-      <td>&nbsp;</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
-      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">1</td>
-    </tr>
-    <tr>
-      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(230,230,230,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Penalizaci&#243;n ℗</td>
       <td>&nbsp;</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
       <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
@@ -613,7 +220,83 @@ Importando libros.json en books de shopping</td>
     <tr>
       <td>&nbsp;</td>
       <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">100%</td>
-      <td colspan="2" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">10</td>
+      <td colspan="2" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">6,6</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>]]></feedback>
+  </result>
+  <result>
+    <assignment>ag</assignment>
+    <student>10000012</student>
+    <score>6,6</score>
+    <feedback><![CDATA[<div style="overflow-x:auto;display:flex;justify-content:left;">
+  <table style="border-collapse:collapse;empty-cells:hide;">
+    <tr>
+      <td colspan="4" rowspan="3" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Ejercicios UD2 XML
+AD – 2 DAM</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(230,230,230,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Criterio</td>
+      <td rowspan="2" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(230,230,230,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Peso</td>
+      <td colspan="2" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(230,230,230,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Nota</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(230,230,230,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">Apto</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(230,230,230,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">No Apto</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD2Ejer1310
+Array personas.xml</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">33%</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
+      <td>&nbsp;</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">3,3</td>
+    </tr>
+    <tr>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD2Ejer1311
+Coches.xml</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">33%</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
+      <td>&nbsp;</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">10</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">3,3</td>
+    </tr>
+    <tr>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">UD2Ejer1312
+coches.csv a xml</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">34%</td>
+      <td>&nbsp;</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(255,255,255,1);color:rgba(0,0,0,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">X</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
+      <td style="border:0px none rgba(0,0,0,1);font-family:Verdana;font-size:8px;font-weight:normal;font-style:normal;background-color:rgba(0,0,0,0);color:rgba(0,0,0,1);padding:8px;white-space:no-wrap;text-align:center;text-decoration:initial;">0</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">100%</td>
+      <td colspan="2" style="border:2px solid rgba(0,0,0,1);font-family:Verdana;font-size:11px;font-weight:bold;font-style:normal;background-color:rgba(76,76,76,1);color:rgba(255,255,255,1);padding:8px;white-space:normal;text-align:center;text-decoration:initial;">6,6</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
     </tr>

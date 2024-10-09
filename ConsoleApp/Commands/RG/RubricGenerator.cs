@@ -11,14 +11,33 @@ namespace AssessmentTools.Commands
 {
     public static class RubricGenerator
     {
-        private static string NormalizeFolderName(string name)
+        private static string RemoveAccentuationSymbols(this string text)
+        {
+            var normalizedString = text.Normalize(NormalizationForm.FormD);
+            var stringBuilder = new StringBuilder();
+
+            foreach (var c in normalizedString)
+            {
+                var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+                if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+                {
+                    stringBuilder.Append(c);
+                }
+            }
+            string nomalized = stringBuilder.ToString().Normalize(NormalizationForm.FormC);
+            return nomalized;
+        }
+
+        private static string NormalizeFolderName(this string name)
         {
             string nameNormalized;
 
-            nameNormalized = name.Normalize().ToUpper();
-            int inicio = nameNormalized.IndexOf('_');
-            return (inicio >= 1) ? nameNormalized.Remove(inicio, nameNormalized.Length - inicio) : nameNormalized;
+            nameNormalized = name.RemoveAccentuationSymbols().ToUpper();
+            int inicio = nameNormalized.LastIndexOf('_');
+            nameNormalized = (inicio >= 1) ? nameNormalized.Remove(inicio, nameNormalized.Length - inicio) : nameNormalized;
+            return nameNormalized.Replace("_", " ");
         }
+        private static string NormalizeAliasName(this string name) => name.RemoveAccentuationSymbols().ToUpper();
 
         private static void RenameFolder(string f1, string f2)
         {
@@ -40,7 +59,6 @@ namespace AssessmentTools.Commands
             folders.ForEach(f =>
             {
                 f = Path.GetFileName(f);
-                f = options.NormalizedName ? NormalizeFolderName(f) : f;
                 rubricFileNames.Add($"{f}{options.TemplateExtension}");
             });
             rubricFileNames.ForEach(r =>
@@ -56,7 +74,7 @@ namespace AssessmentTools.Commands
             List<string> renamedFolders = new();
             folders.ForEach(f =>
             {
-                string target = Path.Combine(Path.GetDirectoryName(f), NormalizeFolderName(Path.GetFileName(f)));
+                string target = Path.Combine(Path.GetDirectoryName(f), Path.GetFileName(f).NormalizeFolderName());
                 renamedFolders.Add(target);
                 string log;
                 if (f != target)
@@ -169,7 +187,9 @@ namespace AssessmentTools.Commands
         private static bool IsFolderInStudentNameOrAliasSubstring(string folder, List<string> aliasesForAStudent)
         {
             string name = Path.GetFileName(folder).ToUpper();
-            return aliasesForAStudent.FindIndex(alias => alias != "" && name.IndexOf(alias) >= 0) >= 0;
+            return aliasesForAStudent.Select(alias => alias.NormalizeAliasName())
+                                     .Where(alias => alias != "" && name.IndexOf(alias) >= 0)
+                                     .Count() > 0;
         }
 
         private static bool IsFolderInStudentNameOrAliasHeuristic(string folder, List<string> aliasesForAStudent)
@@ -212,22 +232,6 @@ namespace AssessmentTools.Commands
             return proposedNames[option - 1];
         }
 
-        private static string RemoveAccentuationSymbols(string text)
-        {
-            var normalizedString = text.Normalize(NormalizationForm.FormD);
-            var stringBuilder = new StringBuilder();
-
-            foreach (var c in normalizedString)
-            {
-                var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
-                if (unicodeCategory != UnicodeCategory.NonSpacingMark)
-                {
-                    stringBuilder.Append(c);
-                }
-            }
-            string nomalized = stringBuilder.ToString().Normalize(NormalizationForm.FormC);
-            return nomalized;
-        }
         private static void AddProposedNamesToAsociation(
                                 Dictionary<string, string> namedToDeliveredFolderAsociation,
                                 List<string> proposedNames,
@@ -267,7 +271,7 @@ namespace AssessmentTools.Commands
             {
                 string deliveredFolderWithOutAccents = Path.Combine(
                                                                 Path.GetDirectoryName(deliveredFolder),
-                                                                RemoveAccentuationSymbols(Path.GetFileName(deliveredFolder)));
+                                                                Path.GetFileName(deliveredFolder).NormalizeFolderName());
                 var proposedNames = studentNamesWithAlias.Where(nameWithAlias => IsFolderInStudentNameOrAliasSubstring(deliveredFolderWithOutAccents, nameWithAlias.Value))
                                                          .Select(nameWithAlias => nameWithAlias.Key).ToList();
                 if (proposedNames.Count == 0)
@@ -277,18 +281,6 @@ namespace AssessmentTools.Commands
                     AddProposedNamesToAsociation(namedToDeliveredFolderAsociation, proposedNames, deliveredFolder, testing);
             }
             return namedToDeliveredFolderAsociation;
-        }
-
-        private static Dictionary<string, List<string>> Normalize(this Dictionary<string, List<string>> studentNamesWithAlias)
-        {
-            Dictionary<string, List<string>> normalized = new();
-            foreach (var student in studentNamesWithAlias)
-            {
-                string normalizedName = RemoveAccentuationSymbols(student.Key.ToUpper());
-                List<string> normalizedAliases = student.Value.Select(alias => RemoveAccentuationSymbols(alias.ToUpper())).ToList();
-                normalized.Add(normalizedName, normalizedAliases);
-            }
-            return normalized;
         }
 
         public static void Generate(RubricGeneratorOptions options)
@@ -303,14 +295,17 @@ namespace AssessmentTools.Commands
             if (options.IsThereStudentNamesFile)
             {
                 Dictionary<string, string> namedToDeliveredFolderAsociation = NamedToDeliveredFolderAsociation(
-                                                                                        StudentsData.NamesWithAlias(options.StudentNamesFile).Normalize(),
-                                                                                        deliveredFolders,
-                                                                                        options.Test);
+                                                StudentsData.NamesWithAlias(options.StudentNamesFile),
+                                                deliveredFolders,
+                                                options.Test);
                 RenameFoldersWithStudentNamesAsociation(namedToDeliveredFolderAsociation, options.Verbose);
                 namedFolders = RemoveFoldersNotInValidFolders(namedToDeliveredFolderAsociation.Keys.ToList(), options.Test);
             }
             else
+            {
+                // Si no hay fichero de estudiantes normalizo los nombres.
                 namedFolders = NormalizeFolderNames(deliveredFolders, options.Verbose);
+            }
 
             DeflatingFoldersContent(namedFolders, options.Verbose);
             GenerateRubrics(namedFolders, options);
