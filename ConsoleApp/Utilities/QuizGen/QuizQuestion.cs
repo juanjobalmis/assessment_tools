@@ -28,6 +28,8 @@ namespace QuizGen
             };
         }
 
+        private bool JustOneCorrect => Respuestas.FindAll(a => a.Correcta).Count == 1;
+
         private XElement MultichoiceToXML(double grade)
         {
             if (Type != QuestionType.Multichoice)
@@ -48,7 +50,7 @@ namespace QuizGen
                 new XElement("defaultgrade", grade.ToString(CultureInfo.InvariantCulture)),
                 new XElement("penalty", "0.0000000"),
                 new XElement("hidden", "0"),
-                new XElement("single", "false"),
+                new XElement("single", JustOneCorrect ? "true": "false"),
                 new XElement("shuffleanswers", "true"),
                 new XElement("answernumbering", "abc"),
                 new XElement("showstandardinstruction", "0"),

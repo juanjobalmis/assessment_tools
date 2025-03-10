@@ -35,7 +35,7 @@ namespace QuizGen
                     },
                     new QuizQuestion
                     {
-                        Enunciado = "Busca en Internet y deduce que queremos decir con <b><em>'Ingeniería Inversa'</em></b> del IL",
+                        Enunciado = "Busca en Internet un List<T> y deduce que queremos decir con <b><em>'Ingeniería Inversa'</em></b> del IL",
                         Respuestas = new List<Answer>
                         {
                             new Answer { Texto = "Crackear un programa que precisa de número de licencia para funcionar.", Correcta = false },
