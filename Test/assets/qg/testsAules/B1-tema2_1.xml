@@ -36,7 +36,7 @@
     <defaultgrade>0.7142857142857143</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
-    <single>false</single>
+    <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <showstandardinstruction>0</showstandardinstruction>
@@ -73,7 +73,7 @@
     <defaultgrade>0.7142857142857143</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
-    <single>false</single>
+    <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <showstandardinstruction>0</showstandardinstruction>
@@ -110,7 +110,7 @@
     <defaultgrade>0.7142857142857143</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
-    <single>false</single>
+    <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <showstandardinstruction>0</showstandardinstruction>
@@ -147,7 +147,7 @@
     <defaultgrade>0.7142857142857143</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
-    <single>false</single>
+    <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <showstandardinstruction>0</showstandardinstruction>
@@ -184,7 +184,7 @@
     <defaultgrade>0.7142857142857143</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
-    <single>false</single>
+    <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <showstandardinstruction>0</showstandardinstruction>
@@ -221,7 +221,7 @@
     <defaultgrade>0.7142857142857143</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
-    <single>false</single>
+    <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <showstandardinstruction>0</showstandardinstruction>
@@ -298,7 +298,7 @@
     <defaultgrade>0.7142857142857143</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
-    <single>false</single>
+    <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <showstandardinstruction>0</showstandardinstruction>
@@ -335,7 +335,7 @@
     <defaultgrade>0.7142857142857143</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
-    <single>false</single>
+    <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <showstandardinstruction>0</showstandardinstruction>
@@ -418,7 +418,7 @@
     <defaultgrade>0.7142857142857143</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
-    <single>false</single>
+    <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <showstandardinstruction>0</showstandardinstruction>
@@ -455,7 +455,7 @@
     <defaultgrade>0.7142857142857143</defaultgrade>
     <penalty>0.0000000</penalty>
     <hidden>0</hidden>
-    <single>false</single>
+    <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <showstandardinstruction>0</showstandardinstruction>
