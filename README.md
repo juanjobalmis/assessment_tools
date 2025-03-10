@@ -43,7 +43,7 @@
                         * To give feedback of the process.
             -t (--test):
                         * To indicate we are testing the command.
-            -s (--studentNamesFile) <studentNamesFile>:
+            -s (--studentNamesFile) <studentNamesFile>:Ñ
                         * Is a CSV file with ';' separator.
                         * The following name colums are allowed: Name, ID, NickName, GitHubLogin, Mail, Group.
                                 - Name (required): Student name without accentuation symbols.
